@@ -1,0 +1,25 @@
+.logo {
+  position: fixed;
+  top: 25px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 900;
+
+  &__img {
+    display: block;
+    margin: auto;
+
+    @media screen and (max-width: 670px) {
+      max-width: 70%;
+    }
+  }
+  &__text {
+    font-size: 13px;
+    text-align: center;
+    margin-top: 5px;
+
+    @media screen and (max-width: 960px) {
+      display: none;
+    }
+  }
+}

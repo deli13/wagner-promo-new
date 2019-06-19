@@ -12,92 +12,97 @@
 
 	<meta content="width=device-width, user-scalable=1, initial-scale=1" name="viewport" />
 
-	<style>
-		#menu li {
-			display:inline-block;
-			margin: 10px;
-			color: #000;
-			background:#fff;
-			background: rgba(255,255,255, 0.5);
-			-webkit-border-radius: 10px;
-		            border-radius: 10px;
-		}
-		#menu li.active{
-			background:#666;
-			background: rgba(0,0,0, 0.5);
-			color: #fff;
-		}
-		#menu li a{
-			text-decoration:none;
-			color: #000;
-		}
-		#menu li.active a:hover{
-			color: #000;
-		}
-		#menu li:hover{
-			background: rgba(255,255,255, 0.8);
-		}
-		#menu li a,
-		#menu li.active a{
-			padding: 9px 18px;
-			display:block;
-		}
-		#menu li.active a{
-			color: #fff;
-		}
-		#menu{
-			position:fixed;
-			top:0;
-			left:0;
-			height: 40px;
-			z-index: 70;
-			width: 100%;
-			padding: 0;
-			margin:0;
-		}
-	</style>
-
 </head>
 
 <body>	
 
 	<header class="header">
-		<ul id="menu">
-			<li data-menuanchor="page01" class="active"><a href="#page01">First slide</a></li>
-			<li data-menuanchor="page02"><a href="#page02">Second slide</a></li>
-			<li data-menuanchor="page03"><a href="#page03">Third slide</a></li>
-		</ul>
+
+		<div class="link-cars">
+			<a href="#" class="link-cars__link"><span>автомобили</span></a>
+		</div>
+		<div class="logo">
+			<a href="#"><img src="images/wgnerLogo.png" alt="Лого" class="logo__img"></a>
+			<div class="logo__text">группа официальных дилеров</div>
+		</div>
+
+		<ul id="menu" class="nav-menu">
+			<li data-menuanchor="page01" class="nav-menu__item active"><a href="#page01"><span>WAGNER</span></a></li>
+			<li data-menuanchor="page02" class="nav-menu__item"><a href="#page02"><span>С пробегом</span></a></li>
+			<li data-menuanchor="page03" class="nav-menu__item"><a href="#page03"><span>Обслуживание</span></a></li>
+			<li data-menuanchor="page04" class="nav-menu__item"><a href="#page04"><span>Аксессуары</span></a></li>
+			<li data-menuanchor="page05" class="nav-menu__item"><a href="#page05"><span>WAGNER Финанс</span></a></li>
+		</ul>		
+
 	</header>
 
 	<main class="main">
 
-		<div id="fullpage">
+		<div id="fullpage" class="fullpage-wagner">
+
 			<div class="section" id="section0">
-				<div class="intro">
-					<h1>Enable Your Scroll Bar!</h1>
-					<p>The perfect combination!</p>
-				</div>
-			</div>
-			<div class="section" id="section1">
-				<div class="slide" id="slide1">
-					<div class="intro">
-						<h1>Free scroll</h1>
-						<p>
-							User can still using the scroll bar and fullPage.js will do the rest!
-						</p>
+
+				<div class="top-info">			
+					<div class="top-info__links">
+						<a href="#" class="top-info__link top-info__link--ios"><span>iOS</span></a>
+						<a href="#" class="top-info__link top-info__link--android"><span>Android</span></a>
+						<a href="#" class="top-info__link top-info__link--lk"><span>Личный кабинет</span></a>
+					</div>
+					<div class="top-info__burger">
+						<span id="burger" class="burger"></span>
 					</div>
 				</div>
+				
+				<div class="promo-slider">					
 
-				<div class="slide" id="slide2">
-					<h1>Slide 2</h1>
+					<div class="promo-slider__slider owl-carousel new-car-slider" id="new-car-slider">
+						
+						<div class="promo-slider__item new-car-slider__item" data-hash="Mercedes">
+							<h2>Mercedes</h2>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor corporis id possimus vel, odit, quis voluptatem nemo laudantium, aliquid deleniti, fugiat eos quaerat non quos explicabo nisi deserunt sint porro.
+						</div>
+						<div class="promo-slider__item new-car-slider__item" data-hash="Audi">
+							<h2>Audi</h2>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor corporis id possimus vel, odit, quis voluptatem nemo laudantium, aliquid deleniti, fugiat eos quaerat non quos explicabo nisi deserunt sint porro.
+						</div>
+						<div class="promo-slider__item new-car-slider__item" data-hash="Volkswagen">
+							<h2>Volkswagen</h2>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor corporis id possimus vel, odit, quis voluptatem nemo laudantium, aliquid deleniti, fugiat eos quaerat non quos explicabo nisi deserunt sint porro.
+						</div>
+						<div class="promo-slider__item new-car-slider__item" data-hash="Skoda">
+							<h2>Skoda</h2>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor corporis id possimus vel, odit, quis voluptatem nemo laudantium, aliquid deleniti, fugiat eos quaerat non quos explicabo nisi deserunt sint porro.
+						</div>
+
+					</div>
+
+					<ul class="promo-slider__nav slider-nav" id="new-car-slider__nav">
+						<li class="slider-nav__item"><a href="#Mercedes"><span>Mercedes-Benz</span></a></li>
+			      <li class="slider-nav__item"><a href="#Audi"><span>Audi</span></a></li>
+			      <li class="slider-nav__item"><a href="#Volkswagen"><span>Volkswagen</span></a></li>
+			      <li class="slider-nav__item"><a href="#Skoda"><span>Škoda</span></a></li>
+					</ul>
+					
 				</div>
 
 			</div>
+
+			<div class="section" id="section1">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis odio officia asperiores impedit architecto vel aut reprehenderit nihil cumque facere dignissimos consequuntur ipsam incidunt, tempore modi ut esse, ullam nobis!
+			</div>
+
 			<div class="section" id="section2">
-				<div class="intro">
-					<h1>Great User Experience!</h1>
-				</div>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit impedit natus, saepe, iure maiores, et velit quia ea laboriosam esse alias dicta quaerat. Sunt iste et veniam, voluptas quia optio.
 			</div>
+
+			<div class="section" id="section3">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit impedit natus, saepe, iure maiores, et velit quia ea laboriosam esse alias dicta quaerat. Sunt iste et veniam, voluptas quia optio.
+			</div>
+
+			<div class="section" id="section4">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit impedit natus, saepe, iure maiores, et velit quia ea laboriosam esse alias dicta quaerat. Sunt iste et veniam, voluptas quia optio.
+			</div>
+
 		</div>
 
 	</main>

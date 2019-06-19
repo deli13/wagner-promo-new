@@ -1,0 +1,83 @@
+.top-info {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  z-index: 900;
+  display: flex;
+  flex-wrap: wrap;
+
+  @media screen and (max-width: 670px) {
+    top: 25px;
+  }
+  @media screen and (max-width: 500px) {
+    right: 20px;
+  }
+
+  &__links {
+    padding-right: 80px;
+
+    @media screen and (max-width: 1280px) {
+      padding-right: 0;
+    }
+  }
+  &__link {
+    margin-right: 20px;
+    font-size: 13px;
+    color: #000000;
+    text-decoration: none;
+    padding-left: 30px;
+    position: relative;
+    line-height: 18px;
+    transition:  all 0.5s;
+
+    @media screen and (max-width: 1280px) {
+      margin-right: 15px;
+    }
+    @media screen and (max-width: 960px) {
+      span {
+        display: none;
+      }
+    }
+    @media screen and (max-width: 500px) {
+      margin-right: 5px;
+    }
+
+    &:hover {
+      opacity: 0.8;
+    }
+
+    &:before {
+      content: '';
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+    
+    &--ios {
+      @media screen and (max-width: 670px) {
+        display: none;
+      }
+    }
+    &--ios:before {
+      background: url(../images/IosLogo.png) no-repeat left center;
+      height: 21px;
+      width: 21px;
+    }
+    &--android {
+      @media screen and (max-width: 670px) {
+        display: none;
+      }
+    }
+    &--android:before {
+      background: url(../images/AndroidLogo.png) no-repeat left center;
+      width: 20px;
+      height: 20px;
+    }
+    &--lk:before {
+      background: url(../images/lk-icon.png) no-repeat 3px center;
+      width: 19px;
+      height: 21px;
+    }
+  }
+}
