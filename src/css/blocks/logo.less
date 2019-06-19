@@ -22,4 +22,20 @@
       display: none;
     }
   }
+
+  @media screen and (max-width: 670px) {
+    display: none;
+  }
+}
+.logo--mob {
+  display: none;
+
+  @media screen and (max-width: 670px) {
+    display: block;
+    position: fixed;
+    top: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 900;
+  }
 }

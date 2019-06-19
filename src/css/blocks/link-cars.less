@@ -8,14 +8,14 @@
   text-transform: uppercase;
   line-height: 24px;
 
-  @media screen and (max-width: 670px) {
+  /*@media screen and (max-width: 670px) {
     top: 27px;
   }
   @media screen and (max-width: 500px) {
     left: 20px;
-  }
+  }*/
 
-  a {
+  &__link {
     color: #000000;
     text-decoration: none;
     padding-left: 35px;
@@ -54,5 +54,24 @@
     }
   }
 
+  @media screen and (max-width: 670px) {
+    display: none;
+  }
+
   
+}
+.link-cars--mob {
+  display: none;
+
+  @media screen and (max-width: 670px) {
+    display: block;
+    position: fixed;
+    left: 20px;
+    z-index: 900;
+    top: 27px; 
+    font-size: 12px;
+    font-weight: 400;  
+    text-transform: uppercase;
+    line-height: 24px;
+  }
 }
