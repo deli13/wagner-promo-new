@@ -7,15 +7,46 @@
   top: 120px;
   padding: 0 25px;  
 
+  @media screen and (max-width: 670px) {
+    top: 0;
+    padding-top: 35px;
+    height: 100%;
+  }
+
   &__btns {
-    max-width: 540px;
+    width: 540px;
+    max-width: 100%;
     margin: auto;
     display: flex;
     justify-content: space-between;
     margin-top: 110px;
+    flex-wrap: wrap;
+
+    @media screen and (max-width: 670px) {
+      position: absolute;
+      bottom: 55px;
+      justify-content: center;
+      width: 100%;
+      margin-top: 0;
+      left: 0;
+    }
 
     &--center {
       justify-content: center;
+
+      @media screen and (max-width: 670px) {
+        position: relative;
+        bottom: auto;
+        margin-top: 25px;
+      }
+    }
+
+    &--accessories {
+      @media screen and (max-width: 670px) {
+        position: relative;
+        bottom: auto;
+        margin-top: 25px;
+      }
     }
   }
 }

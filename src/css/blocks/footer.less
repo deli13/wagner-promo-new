@@ -8,6 +8,11 @@
   padding-top: 30px;
   padding-bottom: 30px;
 
+  @media screen and (max-width: 670px) {
+      padding-top: 15px;
+      padding-bottom: 15px;
+    }
+
   &__menu {
     display: block;
     width: 100%;
@@ -19,22 +24,42 @@
     margin-top: 20px;
     font-weight: 400;
     font-size: 16px;
+
+    @media screen and (max-width: 670px) {
+      margin-top: 10px;
+      font-size: 12px;
+    }
   }
 
   &__social {
     position: absolute;
     right: 33px;
     top: 23px;
-    img {
-      display: inline-block;
+
+    @media screen and (max-width: 670px) {
+      position: relative;
+      top: auto;
+      right: auto;
+      text-align: center;
+      margin-top: 10px;
     }
+
   }
   &__social-link {
     padding-left: 10px;
     transition:  all 0.2s;
 
+    @media screen and (max-width: 670px) {
+      padding-left: 5px;
+      padding-right: 5px;
+    }
+
     img {
       display: inline-block;
+
+      @media screen and (max-width: 670px) {
+        max-width: 20px;
+      }
     }
 
     &:hover {

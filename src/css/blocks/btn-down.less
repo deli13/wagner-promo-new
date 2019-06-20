@@ -12,6 +12,13 @@
     width: 31px;
     height: 17px;
     background: url(../images/Arrow.png);
+
+    &--accessories {
+      @media screen and (max-width: 670px) {
+        background: url(../images/Arrow-white.png);
+        background-size: contain;
+      }
+    }
   }
 }
 .btn-down:hover {
@@ -30,6 +37,9 @@
     width: 31px;
     height: 17px;
     background: url(../images/Arrow-top.png);
+  }
+  @media screen and (max-width: 670px) {
+    display: none;
   }
 }
 .btn-top:hover {

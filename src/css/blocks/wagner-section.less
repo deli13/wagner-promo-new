@@ -10,21 +10,45 @@
     background: url(../images/usedcars-bg.png) no-repeat right bottom,
        url(../images/background-section.jpg) no-repeat center;
        background-size: contain, cover;
+
+       @media screen and (max-width: 670px) {
+        background: url(../images/usedcars-bg-mob.png) no-repeat right center,
+          url(../images/background-section.jpg) no-repeat center;
+          background-size: contain, cover;
+       }
   }
   &--service {
     background: url(../images/service-bg.png) no-repeat right 80px,
        url(../images/background-section.jpg) no-repeat center;
        background-size: contain, cover;
+
+      @media screen and (max-width: 670px) {
+        background: url(../images/service-bg-mob.png) no-repeat right center,
+          url(../images/background-section.jpg) no-repeat center;
+          background-size: contain, cover;
+       }
+
   }
   &--accessories {
     background: url(../images/accessories-bg-left.png) no-repeat left top,
         url(../images/accessories-bg-right2.png) no-repeat right bottom,
        url(../images/background-section.jpg) no-repeat center;
        background-size: contain, 37%, cover;
+
+      @media screen and (max-width: 670px) {
+        background: url(../images/accessories-bg-mob.png) no-repeat center bottom,
+          url(../images/background-section.jpg) no-repeat center;
+          background-size: contain, cover;
+       }
   }
   &--finans {
     background: url(../images/bg-Finans.jpg) no-repeat center -100px;
     background-size: cover;
+
+    @media screen and (max-width: 670px) {
+      background: url(../images/bg-Finans-mob.jpg) no-repeat center top;
+    background-size: cover;
+    }
   }
   &__logo-finans {
     position: absolute;
@@ -34,5 +58,9 @@
     left: 0;
     right: 0;
     margin: auto;
+
+    @media screen and (max-width: 670px) {
+      display: none;
+    }
   }
 }
