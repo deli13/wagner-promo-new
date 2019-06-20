@@ -1,0 +1,54 @@
+.promo-block {
+
+  &__tab {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  &__item {
+    width: 145px;
+    text-align: center;
+    padding-left: 15px;
+    padding-right: 15px;    
+    position: relative;
+
+    &:after {
+      content: '';
+      display: block;
+      width: 2px;
+      height: 61px;
+      background: #181716;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto;
+    }
+    &:last-child {
+      &:after {
+        display: none;
+      }
+    }
+  }
+  &__num {
+    font-size: 37px;
+    font-weight: 400;
+    display: block;
+
+    i {
+      font-style: normal;
+      font-size: 15px;
+    }
+  }
+  &__text {
+    font-size: 12px;
+    line-height: 1.2;
+    display: block;
+  }
+  &__btns {
+    margin-top: 50px;
+  }
+  &__title {
+    margin-bottom: 0;
+  }
+}

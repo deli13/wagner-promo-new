@@ -1,0 +1,27 @@
+.menu {
+ 
+  &__list {
+     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+  }
+  &__item {
+    position: relative;
+
+    &:after {
+      content: '|';
+    }
+  }
+  &__link {
+    color: #000000;
+    font-size: 15px;
+    text-decoration: none;
+    padding-right: 6px;
+    padding-left: 6px;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

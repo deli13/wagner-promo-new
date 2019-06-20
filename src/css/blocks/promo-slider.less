@@ -1,0 +1,22 @@
+.promo-slider {
+  position: absolute;
+  bottom: 0;
+  z-index: 8;
+
+  &__nav {
+    position: absolute;
+    bottom: 105px;
+    z-index: 10;
+  }
+}
+.promo-slider--newcar {
+  bottom: -85px;
+
+  @media screen and (max-width: 1280px) {
+    bottom: 0px;
+  }
+
+  &__nav {
+    bottom: 75px;
+  }
+}

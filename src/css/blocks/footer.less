@@ -1,0 +1,44 @@
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  left: 0;
+  right: 0;
+  background-color: #f7f7f7;
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  &__menu {
+    display: block;
+    width: 100%;
+  }
+  &__copyright {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    font-weight: 400;
+    font-size: 16px;
+  }
+
+  &__social {
+    position: absolute;
+    right: 33px;
+    top: 23px;
+    img {
+      display: inline-block;
+    }
+  }
+  &__social-link {
+    padding-left: 10px;
+    transition:  all 0.2s;
+
+    img {
+      display: inline-block;
+    }
+
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+}
