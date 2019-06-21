@@ -14,7 +14,11 @@
     background: url(../images/Arrow.png);
 
     &--accessories {
-      @media screen and (max-width: 670px) {
+      @media screen and (min-width: 671px) and (max-width: 960px) {
+        background: url(../images/Arrow-white.png);
+        background-size: contain;
+      }
+      @media screen and (max-width: 576px) {
         background: url(../images/Arrow-white.png);
         background-size: contain;
       }

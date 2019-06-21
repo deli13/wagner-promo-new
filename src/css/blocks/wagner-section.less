@@ -11,7 +11,13 @@
        url(../images/background-section.jpg) no-repeat center;
        background-size: contain, cover;
 
-       @media screen and (max-width: 670px) {
+       @media screen and (min-width: 671px) and (max-width: 960px) {
+        background: url(../images/usedcars-bg-mob.png) no-repeat right 85%,
+          url(../images/background-section.jpg) no-repeat center;
+          background-size: contain, cover;
+       }
+
+       @media screen and (max-width: 576px) {
         background: url(../images/usedcars-bg-mob.png) no-repeat right center,
           url(../images/background-section.jpg) no-repeat center;
           background-size: contain, cover;
@@ -22,7 +28,13 @@
        url(../images/background-section.jpg) no-repeat center;
        background-size: contain, cover;
 
-      @media screen and (max-width: 670px) {
+       @media screen and (min-width: 671px) and (max-width: 960px) {
+        background: url(../images/service-bg-mob.png) no-repeat right bottom,
+          url(../images/background-section.jpg) no-repeat center;
+          background-size: contain, cover;
+       }
+
+      @media screen and (max-width: 576px) {
         background: url(../images/service-bg-mob.png) no-repeat right center,
           url(../images/background-section.jpg) no-repeat center;
           background-size: contain, cover;
@@ -35,7 +47,13 @@
        url(../images/background-section.jpg) no-repeat center;
        background-size: contain, 37%, cover;
 
-      @media screen and (max-width: 670px) {
+       @media screen and (min-width: 671px) and (max-width: 960px) {
+        background: url(../images/accessories-bg-mob.png) no-repeat center bottom,
+          url(../images/background-section.jpg) no-repeat center;
+          background-size: contain, cover;
+       }
+
+      @media screen and (max-width: 576px) {
         background: url(../images/accessories-bg-mob.png) no-repeat center bottom,
           url(../images/background-section.jpg) no-repeat center;
           background-size: contain, cover;
@@ -45,7 +63,12 @@
     background: url(../images/bg-Finans.jpg) no-repeat center -100px;
     background-size: cover;
 
-    @media screen and (max-width: 670px) {
+    @media screen and (min-width: 671px) and (max-width: 960px) {
+      background: url(../images/bg-Finans-mob.jpg) no-repeat center top;
+    background-size: cover;
+    }
+
+    @media screen and (max-width: 576px) {
       background: url(../images/bg-Finans-mob.jpg) no-repeat center top;
     background-size: cover;
     }
@@ -59,6 +82,9 @@
     right: 0;
     margin: auto;
 
+    @media screen and (max-width: 1280px) {
+      bottom: 130px;
+    }
     @media screen and (max-width: 670px) {
       display: none;
     }

@@ -36,13 +36,13 @@ body {
 
 	position: relative;
 
-	@media screen and (max-width: 1680px) { position: relative; }
-	@media screen and (max-width: 1440px) { position: relative; }
 	@media screen and (max-width: 1280px) { position: relative; }
+	@media screen and (max-width: 1024px) { position: relative; }
 	@media screen and (max-width: 960px) { position: relative; }
 	@media screen and (max-width: 670px) { position: relative; }	
-	@media screen and (max-width: 500px) { position: relative; }
-	@media screen and (max-width: 320px) { position: relative; }
+	@media screen and (max-width: 576px) { position: relative; }
+
+	@media screen and (min-width: 671px) and (max-width: 960px) { position: relative; }
 	
 }
 .inner {
@@ -72,6 +72,9 @@ h1 {
 
 	@media screen and (max-width: 670px) {
 		font-size: 33px;
+		margin-top: 20px;
+	}
+	@media screen and (max-width: 576px) {
 		margin-top: 50px;
 	}
 }
