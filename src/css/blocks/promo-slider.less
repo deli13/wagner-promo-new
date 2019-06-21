@@ -8,6 +8,17 @@
     bottom: 105px;
     z-index: 10;
   }
+  &__desc {
+    @media screen and (max-width: 670px) {
+      display: none;
+    }
+  }
+  &__mob {
+    display: none;
+    @media screen and (max-width: 670px) {
+      display: block;
+    }
+  }
 }
 .promo-slider--newcar {
   bottom: -85px;
@@ -15,8 +26,19 @@
   @media screen and (max-width: 1280px) {
     bottom: 0px;
   }
+  @media screen and (max-width: 670px) {
+    // top: 50%;
+    // transform: translateY(-50%);
+    bottom: 125px;
+    
+  }
 
   &__nav {
     bottom: 75px;
+    z-index: 13;
+
+    @media screen and (max-width: 670px) {
+      bottom: 135px;
+    }
   }
 }
