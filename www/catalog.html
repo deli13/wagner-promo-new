@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Wagner Promo</title>
+
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&display=swap&subset=cyrillic" rel="stylesheet">
+	<link rel="stylesheet" href="css/jquery.fullPage.css">
+	<link rel="stylesheet" href="css/owl.carousel.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="icon" href="favicon.ico" type="image/x-icon">	
+
+	<meta content="width=device-width, user-scalable=1, initial-scale=1" name="viewport" />
+
+</head>
+
+<body>	
+
+	<header class="header">
+
+		<div class="link-cars">
+			<a href="#" class="link-cars__link"><span>автомобили</span></a>
+		</div>
+		<div class="logo">
+			<a href="#"><img src="images/wgnerLogo.png" alt="Лого" class="logo__img"></a>
+			<div class="logo__text">группа официальных дилеров</div>
+		</div>
+
+		<ul id="menu" class="nav-menu">
+			<li data-menuanchor="page01" class="nav-menu__item active"><a href="#page01"><span>WAGNER</span></a></li>
+			<li data-menuanchor="page02" class="nav-menu__item"><a href="#page02"><span>С пробегом</span></a></li>
+			<li data-menuanchor="page03" class="nav-menu__item"><a href="#page03"><span>Обслуживание</span></a></li>
+			<li data-menuanchor="page04" class="nav-menu__item"><a href="#page04"><span>Аксессуары</span></a></li>
+			<li data-menuanchor="page05" class="nav-menu__item"><a href="#page05"><span>WAGNER Финанс</span></a></li>
+		</ul>		
+
+	</header>
+
+	<main class="main">
+
+		<div id="fullpage" class="fullpage-wagner">
+
+
+			<section class="section wagner-section wagner-section--promo" id="section0">
+				<!-- Делаем доп., чтобы на мобилке были ТОЛЬКО на первом экране. -->
+				<div class="link-cars--mob">
+					<a href="#" class="link-cars__link"><span>автомобили</span></a>
+				</div>
+				<div class="logo--mob">
+					<a href="#"><img src="images/wgnerLogo.png" alt="Лого" class="logo__img"></a>
+					<div class="logo__text">группа официальных дилеров</div>
+				</div>
+
+				<!-- Верхняя менюшка, делаем здесь, чтобы была только на первом экране. Из-за FullPage так проще позиционировать, тк scroll не работает -->
+				<div class="top-info">			
+					<div class="top-info__links">
+						<a href="#" class="top-info__link top-info__link--ios"><span>iOS</span></a>
+						<a href="#" class="top-info__link top-info__link--android"><span>Android</span></a>
+						<a href="#" class="top-info__link top-info__link--lk"><span>Личный кабинет</span></a>
+					</div>
+					<div class="top-info__burger">
+						<span id="burger" class="burger"></span>
+					</div>
+				</div>				
+
+				<!--Инфо-->
+				<div class="container promo-block">
+					
+					<h1>Добро пожаловать в WAGNER!</h1>
+					<div class="promo-block__tab">
+						<div class="promo-block__item">
+							<span class="promo-block__num">16 <i>лет</i></span>
+							<span class="promo-block__text">на автомобильном рынке</span>
+						</div>
+						<div class="promo-block__item">
+							<span class="promo-block__num">8</span>
+							<span class="promo-block__text">автоцентров по Санкт-Петербургу</span>
+						</div>
+						<div class="promo-block__item">
+							<span class="promo-block__num">4 <i>марки</i></span>
+							<span class="promo-block__text">ведущих мировых брендов</span>
+						</div>
+						<div class="promo-block__item">
+							<span class="promo-block__num">170 <i>тыс.</i></span>
+							<span class="promo-block__text">клиентов</span>
+						</div>
+						<div class="promo-block__item">
+							<span class="promo-block__num">1886</span>
+							<span class="promo-block__text">автомобилей в продаже</span>
+						</div>
+					</div>
+
+					<div class="container__btns promo-block__btns">
+						<a href="#" class="btn">выбрать автомобиль</a>
+						<a href="#" class="btn promo-block__btn-test-drive">тест-драйв</a>
+					</div>
+
+				</div>
+				
+				<!--Слайдер-->	
+				<div class="promo-slider promo-slider--newcar owl-carousel" id="new-car-slider">
+
+					<div class="promo-slider__item new-car-slider__item" data-hash="Mercedes">
+						<div class="promo-slider__desc"><img src="images/slider01/pic1.png" alt="Фото"></div>
+						<div class="promo-slider__mob"><img src="images/slider01/pic1-mob.png" alt="Фото"></div>
+					</div>
+					<div class="promo-slider__item new-car-slider__item" data-hash="Audi">
+						<div class="promo-slider__desc"><img src="images/slider01/pic2.png" alt="Фото"></div>
+						<div class="promo-slider__mob"><img src="images/slider01/pic2-mob.png" alt="Фото"></div>
+					</div>
+					<div class="promo-slider__item new-car-slider__item" data-hash="Volkswagen">
+						<div class="promo-slider__desc"><img src="images/slider01/pic3.png" alt="Фото"></div>
+						<div class="promo-slider__mob"><img src="images/slider01/pic3-mob.png" alt="Фото"></div>
+					</div>
+					<div class="promo-slider__item new-car-slider__item" data-hash="Skoda">
+						<div class="promo-slider__desc"><img src="images/slider01/pic4.png" alt="Фото"></div>
+						<div class="promo-slider__mob"><img src="images/slider01/pic4-mob.png" alt="Фото"></div>
+					</div>
+
+				</div>
+
+				<ul class="promo-slider__nav  promo-slider--newcar__nav slider-nav" id="new-car-slider__nav">
+					<li class="slider-nav__item"><a href="#Mercedes"><span>Mercedes-Benz</span></a></li>
+					<li class="slider-nav__item"><a href="#Audi"><span>Audi</span></a></li>
+					<li class="slider-nav__item"><a href="#Volkswagen"><span>Volkswagen</span></a></li>
+					<li class="slider-nav__item"><a href="#Skoda"><span>Škoda</span></a></li>
+				</ul>	
+				
+				<!--кнопка next-->
+				<div class="btn-down btn-down--first"><a href="#page02" class="btn-down__btn"></a></div>
+			</section>
+
+
+			<section class="section wagner-section wagner-section--usedcars" id="section1">		
+				<!--кнопка prev-->
+				<div class="btn-top"><a href="#page01" class="btn-top__btn"></a></div>		
+
+				<!--Инфо-->
+				<div class="container">					
+					<h2>Автомобили с пробегом</h2>
+					<h3>1886 автомобилей в наличии</h3>	
+					<div class="container__btns">
+						<a href="#" class="btn">выбрать автомобиль</a>
+						<a href="#" class="btn">оценить автомобиль</a>
+					</div>
+				</div>
+				
+				<!--кнопка next-->
+				<div class="btn-down"><a href="#page03" class="btn-down__btn"></a></div>
+			</section>
+
+
+			<section class="section wagner-section wagner-section--service" id="section2">
+				<!--кнопка prev-->
+				<div class="btn-top"><a href="#page02" class="btn-top__btn"></a></div>		
+
+				<!--Инфо-->
+				<div class="container">					
+					<h2>Wagner сервис</h2>
+					<h3>Т.О. что надо</h3>	
+					<div class="container__btns">
+						<a href="#" class="btn">записаться на сервис</a>
+						<a href="#" class="btn btn--actions">Акции</a>
+					</div>
+				</div>
+				
+				<!--кнопка next-->
+				<div class="btn-down"><a href="#page04" class="btn-down__btn"></a></div>
+			</section>
+
+
+			<section class="section wagner-section wagner-section--accessories" id="section3">
+				<!--кнопка prev-->
+				<div class="btn-top"><a href="#page03" class="btn-top__btn"></a></div>		
+
+				<!--Инфо-->
+				<div class="container">					
+					<h2>Wagner аксессуары</h2>
+					<h3>Мелочи жизни, в которой нет места для мелочей</h3>	
+					<div class="container__btns container__btns--accessories">
+						<a href="#" class="btn">подробнее</a>
+						<a href="#" class="btn btn--actions">Акции</a>
+					</div>
+				</div>
+				
+				<!--кнопка next-->
+				<div class="btn-down"><a href="#page05" class="btn-down__btn btn-down__btn--accessories"></a></div>
+			</section>
+
+			<section class="section wagner-section wagner-section--finans" id="section4">				
+				<!--кнопка prev-->
+				<div class="btn-top"><a href="#page04" class="btn-top__btn"></a></div>		
+
+				<!--Инфо-->
+				<div class="container">					
+					<h2>Wagner финанс</h2>
+					<h3>Путь в тысячу миль начинается с первого взноса</h3>	
+					<div class="container__btns container__btns--center">
+						<a href="#" class="btn btn--actions">Подробнее</a>
+					</div>
+				</div>	
+				<img src="images/wagner-assistance.png" alt="wagner assistance" class="wagner-section__logo-finans">
+
+				<div class="footer">
+					<div class="footer__maininfo">
+						<div class="footer__menu">
+							<nav class="menu">
+								<ul class="menu__list">
+									<li class="menu__item"><a href="#" class="menu__link">О компании</a></li>
+									<li class="menu__item"><a href="#" class="menu__link">Автомобили</a></li>
+									<li class="menu__item"><a href="#" class="menu__link">Акции</a></li>
+									<li class="menu__item"><a href="#" class="menu__link">Новости</a></li>
+									<li class="menu__item"><a href="#" class="menu__link">Контакты</a></li>
+									<li class="menu__item"><a href="#" class="menu__link">Личный кабинет</a></li>
+								</ul>
+							</nav>
+						</div>
+						<div class="footer__copyright">WAGNER © 2019</div>
+					</div>
+					<div class="footer__social">
+						<a href="#" class="footer__social-link"><img src="images/vk-icon.png" alt="Vk"></a>
+						<a href="#" class="footer__social-link"><img src="images/fb-icon.png" alt="Fb"></a>
+						<a href="#" class="footer__social-link"><img src="images/inst-icon.png" alt="Instagram"></a>
+					</div>
+				</div>
+	
+			</section>
+			<!--End Section #5s-->
+
+		</div>
+
+	</main>
+
+	<script src="js/jquery-3.4.1.min.js"></script>
+	<script src="js/jquery.fullPage.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/script.js"></script>
+	
+</body>
+</html>
