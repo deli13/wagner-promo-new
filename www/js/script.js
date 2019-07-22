@@ -20,4 +20,15 @@ $(document).ready(function() {
       dotsContainer: '#new-car-slider__nav'
     });
 
+  /*вычисляем отступ от fixed шапки*/   
+  function FooterHeigh() {    
+    var footerheight = $('.page-footer').outerHeight();  
+    $(".page-main").css({"padding-bottom":footerheight});  
+  };
+  FooterHeigh();
+
+  $(window).resize(function(){
+    FooterHeigh();
+  });
+
 });
