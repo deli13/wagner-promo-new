@@ -4,9 +4,10 @@
 	<meta charset="UTF-8">
 	<title>Wagner Promo</title>
 
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&display=swap&subset=cyrillic" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600&display=swap&subset=cyrillic" rel="stylesheet">
 	<link rel="stylesheet" href="css/jquery.fullPage.css">
 	<link rel="stylesheet" href="css/owl.carousel.css">
+	<link rel="stylesheet" href="css/jquery-ui-slider.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="icon" href="favicon.ico" type="image/x-icon">	
 
@@ -34,15 +35,15 @@
 		</div>
 
 		<div class="top-info">			
-					<div class="top-info__links">
-						<a href="#" class="top-info__link top-info__link--ios"><span>iOS</span></a>
-						<a href="#" class="top-info__link top-info__link--android"><span>Android</span></a>
-						<a href="#" class="top-info__link top-info__link--lk"><span>Личный кабинет</span></a>
-					</div>
-					<div class="top-info__burger">
-						<span id="burger" class="burger"></span>
-					</div>
-				</div>
+			<div class="top-info__links">
+				<a href="#" class="top-info__link top-info__link--ios"><span>iOS</span></a>
+				<a href="#" class="top-info__link top-info__link--android"><span>Android</span></a>
+				<a href="#" class="top-info__link top-info__link--lk"><span>Личный кабинет</span></a>
+			</div>
+			<div class="top-info__burger">
+				<span id="burger" class="burger"></span>
+			</div>
+		</div>
 
 	</header>
 
@@ -51,30 +52,242 @@
 		<section class="catalog-page">
 
 			<div class="inner">
-			
+
 				<h1 class="page-main__title">Ваш автомобиль находится здесь</h1>
 				<h2 class="page-main__subtitle">Найдите его прямо сейчас!</h2>
 
 				<div class="configurator">
 					<form action="" id="cars-search" class="configurator__form">
 						
+						<!--верхняя часть формы-->
 						<div class="configurator__main-info">
 
 							<div class="configurator__radio-block">
-								<div class="configurator__for-radio">
+								<div class="input__for-radio">
 									<input type="radio" id="all-auto" name="typeCars[]" value="Все" checked='checked'>                
-                   <label for="all-auto"><i>Все</i></label>
+									<label for="all-auto"><i>Все</i></label>
 								</div>
-								<div class="configurator__for-radio">
+								<div class="input__for-radio">
 									<input type="radio" id="new-auto" name="typeCars[]" value="Новые">                
-                   <label for="new-auto"><i>Новые</i></label>
+									<label for="new-auto"><i>Новые</i></label>
 								</div>
-								<div class="configurator__for-radio">
+								<div class="input__for-radio">
 									<input type="radio" id="old-auto" name="typeCars[]" value="С пробегом">                
-                   <label for="old-auto"><i>С пробегом</i></label>
+									<label for="old-auto"><i>С пробегом</i></label>
 								</div>
-							</div>							
+							</div>
 
+							<div class="block-for-row">
+								<div class="row row--center configurator__row">
+									<div class="col-4">
+										<div class="input__forSelect">
+											<select class="input__select dropdown" name="mark">
+												<option value="все Марки">Марка</option>
+												<option value="Mercedes-Benz">Mercedes-Benz</option>
+												<option value="Audi">Audi</option>
+												<option value="Volkswagen">Volkswagen</option>
+												<option value="ŠKODA">ŠKODA</option>
+											</select>
+										</div>
+									</div>
+									<div class="col-4">
+										<div class="input__forSelect">
+											<select class="input__select dropdown" name="model">
+												<option value="все Модели">Модель</option>
+												<option value="Mercedes-Benz GLC">Mercedes-Benz GLC</option>
+												<option value="Audi Q5">Audi Q5</option>
+												<option value="Volkswagen Polo">Volkswagen Polo</option>
+												<option value="ŠKODA Kodiaq">ŠKODA Kodiaq</option>
+											</select>
+										</div>
+									</div>
+
+									<button class="configurator__more-models-btn"></button>
+								</div>
+							</div>
+
+						</div>						
+
+						<div class="configurator__other-info" id="configurator__other-info">
+							<div class="row configurator__row">
+								<div class="col-4">
+									<div class="row">
+										<div class="col-6">
+											<div class="input__forSelect">
+												<select class="input__select dropdown" name="carcass">
+													<option value="любой кузов">Кузов</option>
+													<option value="Кроссовер">Кроссовер</option>
+													<option value="Седан">Седан</option>
+													<option value="Хэтчбек">Хэтчбек</option>
+													<option value="Внедорожник">Внедорожник</option>
+												</select>
+											</div>
+										</div>
+										<div class="col-6">
+											<div class="input__forSelect">
+												<select class="input__select dropdown" name="transmission">
+													<option value="любая Коробка">Коробка</option>
+													<option value="МКПП">МКПП</option>
+													<option value="АКПП">АКПП</option>
+													<option value="Вариатор">Вариатор</option>
+													<option value="Робот">Робот</option>
+												</select>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-4">
+									<div class="row">
+										<div class="col-6">
+											<div class="input__forSelect">
+												<select class="input__select dropdown" name="motor">
+													<option value="любой Двигатель">Двигатель</option>
+													<option value="Бензин">Бензин</option>
+													<option value="Дизель">Дизель</option>
+												</select>
+											</div>
+										</div>
+										<div class="col-6">
+											<div class="input__forSelect">
+												<select class="input__select dropdown" name="drive-unit">
+													<option value="любой Привод">Привод</option>
+													<option value="Передний">Передний</option>
+													<option value="Задний">Задний</option>
+													<option value="Полный">Полный</option>
+												</select>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-4 col-flex">
+									<div class="input__forSelect input__forSelect--double">
+										<select class="input__select dropdown" name="engine-capacity-min">
+											<option value="любой Объем">Объем от</option>
+											<option value="1.2">1.2</option>
+											<option value="1.6">1.6</option>
+											<option value="2.0">2.0</option>
+										</select>
+									</div>
+									<div class="input__forSelect input__forSelect--double">
+										<select class="input__select dropdown" name="engine-capacity-max">
+											<option value="любой Объем">до</option>
+											<option value="1.2">1.2</option>
+											<option value="1.6">1.6</option>
+											<option value="2.0">2.0</option>
+										</select>
+									</div>
+								</div>
+							</div>
+
+							<div class="row configurator__row">
+								<div class="col-4 col-flex">
+									<div class="input__forSelect input__forSelect--double">
+										<select class="input__select dropdown" name="year-min">
+											<option value="любой год">Год от</option>
+											<option value="2015">2015</option>
+											<option value="2016">2016</option>
+											<option value="2017">2017</option>
+											<option value="2018">2018</option>
+											<option value="2019">2019</option>
+										</select>
+									</div>
+									<div class="input__forSelect input__forSelect--double">
+										<select class="input__select dropdown" name="year-max">
+											<option value="любой год">до</option>
+											<option value="2015">2015</option>
+											<option value="2016">2016</option>
+											<option value="2017">2017</option>
+											<option value="2018">2018</option>
+											<option value="2019">2019</option>
+										</select>
+									</div>
+								</div>
+								<div class="col-4 col-flex">
+									<div class="input__forSelect input__forSelect--double">
+										<select class="input__select dropdown" name="mileage-min">
+											<option value="любой пробег">Пробег от</option>
+											<option value="0 км">0 км</option>
+											<option value="20 000 км">20 000 км</option>
+											<option value="50 000 км">50 000 км</option>
+										</select>
+									</div>
+									<div class="input__forSelect input__forSelect--double">
+										<select class="input__select dropdown" name="mileage-max">
+											<option value="любой пробег">до</option>
+											<option value="0 км">0 км</option>
+											<option value="20 000 км">20 000 км</option>
+											<option value="50 000 км">50 000 км</option>
+										</select>
+									</div>
+								</div>
+								<div class="col-4 col-flex">
+									<div class="input__forSelect input__forSelect--double">
+										<select class="input__select dropdown" name="power-min">
+											<option value="любая мощность">Мощность от</option>
+											<option value="90 л.с.">90 л.с.</option>
+											<option value="120 л.с.">120 л.с.</option>
+											<option value="150 л.с.">150 л.с.</option>
+										</select>
+									</div>
+									<div class="input__forSelect input__forSelect--double">
+										<select class="input__select dropdown" name="power-max">
+											<option value="любая мощность">до</option>
+											<option value="90 л.с.">90 л.с.</option>
+											<option value="120 л.с.">120 л.с.</option>
+											<option value="150 л.с.">150 л.с.</option>
+										</select>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="configurator__more-info">
+							<a href="#" class="configurator__more-info-btn" id="OtherParametrs"></a>
+						</div>
+
+						<div class="configurator__price-info">
+								<div class="configurator__price-slider">					
+	  							<div id="slider-range">
+	  								<div id="custom-handle-min" class="ui-slider-handle configurator__price-slider-numbers"></div>
+	  								<div id="custom-handle-max" class="ui-slider-handle configurator__price-slider-numbers"></div>
+	  							</div>
+  							</div>
+  							<div class="row row--center">
+  								<div class="col-4 col-flex">
+									<div class="input__forSelect input__forSelect--double">
+										<select class="input__select dropdown" name="price-min">
+											<option value="любая цена">Цена от</option>
+											<option value="400 000">400 000</option>
+											<option value="500 000">500 000</option>
+											<option value="600 000">600 000</option>
+											<option value="700 000">700 000</option>
+											<option value="800 000">800 000</option>
+											<option value="900 000">900 000</option>
+											<option value="1 000 000">1 000 000</option>
+											<option value="1 100 000">1 100 000</option>
+											<option value="1 200 000">1 200 000</option>
+										</select>
+									</div>
+									<div class="input__forSelect input__forSelect--double">
+										<select class="input__select dropdown" name="price-max">
+											<option value="любая цена">до</option>
+											<option value="400 000">400 000</option>
+											<option value="500 000">500 000</option>
+											<option value="600 000">600 000</option>
+											<option value="700 000">700 000</option>
+											<option value="800 000">800 000</option>
+											<option value="900 000">900 000</option>
+											<option value="1 000 000">1 000 000</option>
+											<option value="1 100 000">1 100 000</option>
+											<option value="1 200 000">1 200 000</option>
+										</select>
+									</div>
+								</div>
+  							</div>
+						</div>
+
+						<div class="configurator__send-form">
+							<button class="btn">показать варианты</button>
 						</div>
 
 					</form>
@@ -82,19 +295,7 @@
 
 			</div>
 
-		</section>
-
-		<section style="height: 500px;">
-			
-		</section>
-		<section style="height: 500px; background-color: yellow;">
-			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate sint, illo sit id sequi mollitia iusto maiores aperiam quidem ducimus repudiandae optio molestias eveniet, excepturi totam? Iure reprehenderit alias enim, saepe libero eveniet hic sint, porro, facere natus aperiam veritatis ratione nulla numquam accusantium nemo nostrum minus fugiat ea earum. Molestiae perspiciatis quod dolorum laborum corporis reiciendis porro architecto? Accusantium quis nisi distinctio hic eveniet magnam nostrum vel maiores repudiandae, dolorum eligendi eius aspernatur repellendus perferendis tenetur libero ex similique adipisci deleniti facere. Libero ut molestias reiciendis voluptatem? Eum quis amet sapiente facere laboriosam. Distinctio alias maiores repellendus iste odit nobis aliquid nemo! Dolores adipisci quod ab, tenetur illo molestias autem, deleniti accusantium voluptate, neque quisquam aspernatur fuga est magni velit rem modi repellendus voluptatibus. Rem sit, unde officiis, eum ea provident sint vel. Ipsam, laborum adipisci dicta vel cumque asperiores aspernatur, quam doloribus ipsa numquam optio omnis! Voluptas, nesciunt.
-			
-		</section>
-		<section style="height: 500px; background-color: blue;">
-			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate sint, illo sit id sequi mollitia iusto maiores aperiam quidem ducimus repudiandae optio molestias eveniet, excepturi totam? Iure reprehenderit alias enim, saepe libero eveniet hic sint, porro, facere natus aperiam veritatis ratione nulla numquam accusantium nemo nostrum minus fugiat ea earum. Molestiae perspiciatis quod dolorum laborum corporis reiciendis porro architecto? Accusantium quis nisi distinctio hic eveniet magnam nostrum vel maiores repudiandae, dolorum eligendi eius aspernatur repellendus perferendis tenetur libero ex similique adipisci deleniti facere. Libero ut molestias reiciendis voluptatem? Eum quis amet sapiente facere laboriosam. Distinctio alias maiores repellendus iste odit nobis aliquid nemo! Dolores adipisci quod ab, tenetur illo molestias autem, deleniti accusantium voluptate, neque quisquam aspernatur fuga est magni velit rem modi repellendus voluptatibus. Rem sit, unde officiis, eum ea provident sint vel. Ipsam, laborum adipisci dicta vel cumque asperiores aspernatur, quam doloribus ipsa numquam optio omnis! Voluptas, nesciunt.
-			
-		</section>
+		</section>		
 
 		<footer class="footer page-footer">
 			<div class="footer__maininfo">
@@ -124,6 +325,8 @@
 	<script src="js/jquery-3.4.1.min.js"></script>
 	<script src="js/jquery.fullPage.js"></script>
 	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/jquery.easydropdown.js"></script>
+	<script src="js/jquery-ui-slider.min.js"></script>
 	<script src="js/script.js"></script>
 	
 </body>

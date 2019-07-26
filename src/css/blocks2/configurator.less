@@ -1,6 +1,7 @@
 .configurator {
 
   padding-top: 15px;
+  padding-bottom: 85px;
 
   &__main-info {
     
@@ -12,48 +13,121 @@
     display: flex;
     margin: auto;
     flex-wrap: wrap;
-  }
-}
-.configurator__for-radio {
-  width: 33.333333%;
-  border-top: 1px solid #94999d;
-  border-bottom: 1px solid #94999d;
-  border-left: 1px solid #bcc2c6;
 
-  input[type="radio"] {
-    display: none;
+    margin-bottom: 25px;
   }
-  input[type="radio"] + label {
+  &__more-models-btn {
+    position: absolute;
+    top: 0;
+    right: 75px;
+    width: 68px;
+    height: 46px;
+    background: url(../images/more-models-btn.svg);
     cursor: pointer;
-    display: flex;   
-    height: 47px;
-    align-items: center;
-  }  
-  input[type="radio"]:checked + label {
-    background-color: #efefef;
+
+    &:hover {
+      opacity: 0.8;
+    }
   }
-  input[type="radio"] + label > i {
-    font-size: 16px;
-    font-weight: 100;
-    font-style: normal;
-    text-align: center;
+  &__more-info {
     width: 100%;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 50px;    
   }
+  &__more-info-btn {
+    font-size: 18px;
+    display: inline-block;
+    font-weight: 100;
+    color: #000000;
+    text-decoration: none;
+    position: relative;
+    padding-right: 30px;
 
-  &:first-child {
-    border-left-color: #94999d;
-    border-radius: 15px 0 0 15px;
+    &:before {
+      content: 'Все параметры';
+    }
 
-    input[type="radio"]:checked + label {
-      border-radius: 15px 0 0 15px;
+    &:after {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      width: 17px;
+      height: 10px;
+      margin: auto;
+      content: '';
+      pointer-events: none;
+      background-image: url(../images/arrowDown.svg);
+      background-position: right center;
+      background-repeat: no-repeat;
+      transition:  all 0.4s;
+    }
+
+    &--open {
+      &:before {
+        content: 'Свернуть';
+      }
+      &:after {
+        /*background-image: url(../images/arrowUp.svg);*/
+          transform: rotate(540deg);
+      }
     }
   }
-  &:last-child {
-    border-right: 1px solid #94999d;
-    border-radius: 0 15px 15px 0;
+  &__row {
+    margin-bottom: 35px;
+  }
+  &__other-info {
+    display: none;
+    /*padding-bottom: 30px;*/
+  }
+  &__price-info {
 
-    input[type="radio"]:checked + label {
-      border-radius: 0 15px 15px 0;
+  }
+  &__price-slider {
+    padding-top: 30px;
+    padding-bottom: 50px;
+
+    .ui-widget.ui-widget-content {
+      border: 0;
+      height: 3px;
+      background-color: #1b1c20;
+    }
+    .ui-widget-header {
+      background-color: #e60908;
+    }
+    .ui-state-default, .ui-widget-content .ui-state-default {      
+      width: 28px;
+      height: 28px;
+      display: block;
+      border: 3px solid #1b1c20;
+      border-radius: 50%;
+      box-sizing: border-box;
+      background: url(../images/NavBtnCntr-active.svg) no-repeat center, #ffffff;
+      background-size: 8px 8px;
+    }
+    .ui-slider-horizontal .ui-slider-handle {
+      top: -.7em;
     }
   }
+  &__price-slider-numbers {
+    position: relative;
+
+    span {
+      position: absolute;
+      top: -45px;
+      left: -35px;
+      white-space: nowrap;
+      font-weight: 600;
+      font-size: 23px;
+      color: #000000 !important;
+    }
+  }
+  &__send-form {
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+  }
+
 }
+

@@ -31,4 +31,35 @@ $(document).ready(function() {
     FooterHeigh();
   });
 
+  /*Функции для ползунка цены*/
+  function numberWithSpaces(x) {
+    return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");
+  }
+  var handleMin = $( "#custom-handle-min" );
+  var handleMax = $( "#custom-handle-max" );
+  $( "#slider-range" ).slider({
+    range: true,
+    min: 400000,
+    max: 2000000,
+    values: [ 550000, 1600000 ],
+    create: function() {
+      handleMin.html( "<span>" + numberWithSpaces( $( "#slider-range" ).slider( "values", 0 ) ) + "</span>" );
+      handleMax.html( "<span>" + numberWithSpaces( $( "#slider-range" ).slider( "values", 1 ) ) + "</span>" );
+    },
+    slide: function( event, ui ) {     
+      var MinPrice = numberWithSpaces( ui.values[0] );
+      var MaxPrice = numberWithSpaces( ui.values[1] );
+      handleMin.html( "<span>" + MinPrice  + "</span>" );
+      handleMax.html( "<span>" + MaxPrice  + "</span>" );
+    }
+  });
+
+  /*Открыть все параметры*/
+  function OpenOtherParametrs(e) {
+    e.preventDefault();
+    $('#configurator__other-info').slideToggle('300');
+    $("#OtherParametrs").toggleClass("configurator__more-info-btn--open");
+  };
+  $("#OtherParametrs").on("click", OpenOtherParametrs);
+
 });
