@@ -20,7 +20,7 @@ $(document).ready(function() {
       dotsContainer: '#new-car-slider__nav'
     });
 
-  /*вычисляем отступ от fixed шапки*/   
+  /*вычисляем отступ от fixed подвала*/   
   function FooterHeigh() {    
     var footerheight = $('.page-footer').outerHeight();  
     $(".page-main").css({"padding-bottom":footerheight});  
