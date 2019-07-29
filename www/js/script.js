@@ -59,7 +59,21 @@ $(document).ready(function() {
     e.preventDefault();
     $('#configurator__other-info').slideToggle('300');
     $("#OtherParametrs").toggleClass("configurator__more-info-btn--open");
+    $(".configurator__reset-filter-btn").toggleClass("configurator__reset-filter-btn--open");
   };
   $("#OtherParametrs").on("click", OpenOtherParametrs);
+
+  //фиксированная менюшка в мобилке на странице каталога 
+  var catalogMobNavPosition = $(".catalog-mob-nav").offset().top;
+  console.log(catalogMobNavPosition);
+  $(window).scroll(function () {
+    if(  $(window).scrollTop() > catalogMobNavPosition ) {
+          $(".catalog-mob-nav").addClass("catalog-mob-nav--fixed");
+      }      
+      else {         
+          $(".catalog-mob-nav").removeClass("catalog-mob-nav--fixed");
+      }; 
+  });
+  
 
 });

@@ -1,0 +1,39 @@
+.catalog-mob-nav {
+	display: none;
+
+	@media screen and (max-width: 670px) {
+		display: flex;
+		width: 100%;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		padding-top: 20px;
+		padding-bottom: 20px;
+		border-bottom: 1px solid #efefef;
+
+		&--fixed {
+			position: fixed;
+			top: 0;
+			left: 0;
+			right: 0;
+			background: #ffffff;
+			z-index: 100;
+			padding-left: 10px;
+			padding-right: 10px;
+		}
+	}
+
+	&__return {
+		width: 21px;
+		height: 19px;
+		background: url(../images/return-icon.svg) no-repeat;
+		background-size: contain;
+		display: block;
+	}
+	&__sorting {
+		width: 30px;
+		height: 21px;
+		background: url(../images/sorting-icon.svg) no-repeat;
+		background-size: contain;
+		display: block;
+	}
+}

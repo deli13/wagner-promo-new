@@ -4,8 +4,19 @@
     #ffffff;
   background-size: contain;
 
+  @media screen and (max-width: 670px) {
+  	padding-top: 40px;
+  	background: url(../images/page-background-mob.jpg) no-repeat center top, #ffffff;
+  	background-size: contain;
+  }
+
   &__subtitle {
     font-size: 33px;
     padding-bottom: 25px;
+
+    @media screen and (max-width: 670px) {
+      font-size: 18px;
+      padding-bottom: 15px;
+    }
   }
 }
