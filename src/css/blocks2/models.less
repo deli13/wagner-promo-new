@@ -155,6 +155,7 @@
       width: 100%;
       display: flex;
       flex-wrap: wrap;
+      position: relative;
     }
   }
   &__credit-p {
@@ -256,13 +257,9 @@
     z-index: 50;
 
     @media screen and (max-width: 960px) {
-      top: auto;
-      bottom: 25%;
+      top: -75px;
       display: flex;
       flex-wrap: wrap;
-    }
-    @media screen and (max-width: 670px) {
-      bottom: 35%;
     }
   }
   &__icon {
