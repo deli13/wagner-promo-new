@@ -65,7 +65,9 @@ $(document).ready(function() {
 
   //фиксированная менюшка в мобилке на странице каталога 
   var catalogMobNavPosition = $(".catalog-mob-nav").offset().top;
-  console.log(catalogMobNavPosition);
+  $(window).resize(function(){     
+      catalogMobNavPosition = $(".catalog-mob-nav").offset().top;
+  });  
   $(window).scroll(function () {
     if(  $(window).scrollTop() > catalogMobNavPosition ) {
           $(".catalog-mob-nav").addClass("catalog-mob-nav--fixed");
