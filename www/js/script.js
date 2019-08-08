@@ -24,6 +24,7 @@ $(document).ready(function() {
   function FooterHeigh() {    
     var footerheight = $('.page-footer').outerHeight();  
     $(".page-main").css({"padding-bottom":footerheight});  
+    $(".page").css({"padding-bottom":footerheight+60});  
   };
   FooterHeigh();
 
