@@ -65,18 +65,52 @@ $(document).ready(function() {
   $("#OtherParametrs").on("click", OpenOtherParametrs);
 
   //фиксированная менюшка в мобилке на странице каталога 
-  var catalogMobNavPosition = $(".catalog-mob-nav").offset().top;
-  $(window).resize(function(){     
-      catalogMobNavPosition = $(".catalog-mob-nav").offset().top;
-  });  
-  $(window).scroll(function () {
-    if(  $(window).scrollTop() > catalogMobNavPosition ) {
-          $(".catalog-mob-nav").addClass("catalog-mob-nav--fixed");
-      }      
-      else {         
-          $(".catalog-mob-nav").removeClass("catalog-mob-nav--fixed");
-      }; 
+  var catalogMobNav = $(".catalog-mob-nav");
+
+  if(catalogMobNav.length != 0 ) {
+
+    var catalogMobNavPosition = $(".catalog-mob-nav").offset().top;
+    $(window).resize(function(){     
+        catalogMobNavPosition = $(".catalog-mob-nav").offset().top;
+    });  
+    $(window).scroll(function () {
+      if(  $(window).scrollTop() > catalogMobNavPosition ) {
+            $(".catalog-mob-nav").addClass("catalog-mob-nav--fixed");
+        }      
+        else {         
+            $(".catalog-mob-nav").removeClass("catalog-mob-nav--fixed");
+        }; 
+    });
+
+  };
+
+  //слайдер галереи фотографии
+  $("#car-gallery-slider").owlCarousel({       
+      nav:false,
+      pagination: false,     
+      loop : true,    
+      center : false,
+      items : 4,
+      autoplay: false,
+      lazyLoad: true,
+      margin: 30,
+      dots: false
+    });
+
+  $('#car-gallery-slider .owl-item').on('click', function(e) {
+      const carousel = $('#car-gallery-slider').data('owl.carousel');
+      carousel.to(carousel.relative($(this).index()), false, true);
   });
+
+
+  function CarGalleryClick(e) {
+    //код функции
+    e.preventDefault();
+    var mylink = $(this).attr('href');
+    $("#car-gallery-mainimg").attr('src', mylink);
+  };
+
+  $(".car-gallery__slider-item").on("click", CarGalleryClick);
   
 
 });
