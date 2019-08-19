@@ -111,6 +111,27 @@ $(document).ready(function() {
   };
 
   $(".car-gallery__slider-item").on("click", CarGalleryClick);
+
+  //слайдер награды
+   $("#awards-slider").owlCarousel({       
+      nav:false,
+      pagination: false,     
+      loop : true,    
+      center : true,
+      autoplay: false,
+      lazyLoad: true,      
+      margin : 30,
+      dots : true,
+
+      responsive:{
+        600:{
+            items: 6
+        },
+        0:{
+          items: 3
+        }
+      }
+    });
   
 
 });
