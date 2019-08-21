@@ -124,8 +124,11 @@ $(document).ready(function() {
       dots : true,
 
       responsive:{
-        600:{
-            items: 6
+        960:{
+          items: 6
+        },
+        576:{
+            items: 4
         },
         0:{
           items: 2,
