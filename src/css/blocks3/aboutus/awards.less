@@ -2,6 +2,10 @@
 
 	padding-bottom: 60px;
 
+  @media screen and (max-width: 670px) {
+    padding-bottom: 30px;
+  }
+
 	.inner--small {
 		max-width: 845px;
 	}
@@ -28,4 +32,28 @@
 	border-color: #1b1c20;
     background: url(../images/NavBtnCntr-active.svg) no-repeat center;
     background-size: 6px 6px;
+}
+@media screen and (max-width: 670px) {
+  .awards-slider .owl-nav {
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .awards-slider.owl-carousel .owl-nav button.owl-prev,
+  .awards-slider.owl-carousel .owl-nav button.owl-next {
+    display: block;
+    width: 11px;
+    height: 21px;
+  }
+  .awards-slider.owl-carousel .owl-nav button.owl-prev {
+    margin-right: 20px;
+    background: url(../images/slider-arrow-prev.svg) no-repeat;
+    background-size: contain;
+  }
+  .awards-slider.owl-carousel .owl-nav button.owl-next {
+    margin-left: 20px;
+    background: url(../images/slider-arrow-next.svg) no-repeat;
+    background-size: contain;
+  }
 }

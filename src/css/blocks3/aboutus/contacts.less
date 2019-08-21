@@ -2,11 +2,23 @@
 
 	margin-bottom: 30px;
 
+	@media screen and (max-width: 670px) {
+		margin-bottom: 10px;
+	}
+
 	&__row {
 		margin-bottom: 30px;
+
+		@media screen and (max-width: 670px) {
+			margin-bottom: 10px;
+		}
 	}
 	&__col {
 		margin-bottom: 30px;
+
+		@media screen and (max-width: 670px) {
+			margin-bottom: 10px;
+		}
 	}
 	&__item {
 		display: flex;
@@ -15,9 +27,22 @@
 		height: 100%;
 		width: 100%;
 		position: relative;
+
+		@media screen and (max-width: 670px) {
+			flex-direction: row;
+			flex-wrap: wrap;
+			align-items: center;
+			align-content: center;
+			box-shadow: none;
+			background-color: #efefef;
+		}
 	}
 	&__prev {
-
+		@media screen and (max-width: 670px) {
+			width: 25%;
+			display: flex;
+			justify-content: center;
+		}
 	}
 	&__logo {
 		height: 160px;
@@ -25,11 +50,24 @@
 		align-items: center;
 		align-content: center;
 		justify-content: center;	
+
+		@media screen and (max-width: 670px) {
+			max-width: 65%;
+			height: auto;
+
+			&--audi {
+				max-width: 80%;
+			}
+		}
 	}
 	&__photo {
 		max-width: 100%;
 		width: 100%;
 		display: block;
+
+		@media screen and (max-width: 670px) {
+			display: none;
+		}
 	}
 	&__text-block {
 		flex-grow: 1;
@@ -40,6 +78,12 @@
 
 		padding: 25px 10px;
 		text-align: center;
+
+		@media screen and (max-width: 670px) {
+			width: 75%;
+			padding: 10px;
+			text-align: left;
+		}
 	}
 	&__header {
 
@@ -49,12 +93,22 @@
 		color: #565655;
 		line-height: 1.6;
 		margin-bottom: 10px;
+
+		@media screen and (max-width: 670px) {
+			font-size: 13px;
+			font-weight: 400;
+			margin-bottom: 5px;
+		}
 	}
 	&__name {
 		font-weight: 600;
 		font-size: 23px;
 		line-height: 1.3;
 		margin-bottom: 5px;
+
+		@media screen and (max-width: 670px) {
+			font-size: 16.5px;
+		}
 		
 		&--upper {
 			text-transform: uppercase;
@@ -68,9 +122,20 @@
 		color: #565655;
 		line-height: 1.6;
 		margin-bottom: 20px;
+
+		@media screen and (max-width: 670px) {
+			margin-bottom: 0;
+			font-size: 13px;
+			font-weight: 400;
+			line-height: 1.4;
+		}
 	}
 	&__btns {
-
+		@media screen and (max-width: 670px) {
+			position: absolute;
+			bottom: 0;
+			right: 10px;
+		}
 	}
 	&__gotomap {
 		width: 169px;
@@ -80,6 +145,23 @@
 		margin: auto;
 		font-weight: 400;
 		height: 47px;
+
+		@media screen and (max-width: 670px) {
+			font-size: 0;
+			display: block;
+			width: 28px;
+			height: 32px;			
+			min-width: 28px;
+			min-height: 32px;
+			background: url(../images/map-icon.svg) no-repeat;
+			border: 0;
+			background-size: contain;
+
+			&:hover {
+				border: 0;
+				box-shadow: none;
+			}
+		}
 	}
 
 	/**/
@@ -99,16 +181,33 @@
 		font-size: 23px;
 		padding-top: 20px;
 		padding-bottom: 10px;
+
+		@media screen and (max-width: 670px) {
+			font-size: 16px;
+		}
 	}
 	&__mainoffice-text {
 		font-size: 14px;
 		line-height: 1.65;
 		padding-bottom: 10px;
+
+		@media screen and (max-width: 670px) {
+			font-size: 12px;
+			font-weight: 400;
+
+			padding-bottom: 50px;
+			background: url(../images/map-icon.svg) no-repeat center bottom;
+			background-size: 28px 32px;
+		}
 	}
 }
 .contacts-map {
 	max-width: 100%;
 	margin-bottom: 70px;
+
+	@media screen and (max-width: 670px) {
+		margin-bottom: 30px;
+	}
 
 	&__map {
 		width: 100%;
@@ -116,5 +215,9 @@
 	    background: #232323;
 	    background: #cccccc;
 	    overflow: hidden;
+
+	    @media screen and (max-width: 670px) {
+	    	height: 375px;
+	    }
 	}
 }

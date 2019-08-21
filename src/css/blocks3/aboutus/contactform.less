@@ -2,6 +2,11 @@
   padding-top: 30px;
   padding-bottom: 105px;
 
+  @media screen and (max-width: 670px) {
+    padding-top: 15px;
+    padding-bottom: 0;
+  }
+
   &__col {
     display: flex;
     flex-direction: column;
@@ -11,9 +16,24 @@
     margin-top: 80px;
     display: flex;
     align-content: center;
+
+    @media screen and (max-width: 670px) {
+      margin-top: 30px;
+    }
   }
   &__btn {
     margin: auto;
+
+    &.btn {
+      @media screen and (max-width: 670px) {
+        margin-bottom: 0;
+      }
+    }
+  }
+  &__title {
+    @media screen and (max-width: 670px) {
+      padding-bottom: 0;
+    }
   }
 }
 .contactform__input,
@@ -31,6 +51,10 @@
   &::-moz-placeholder          {color:#000000; opacity: 1;}/* Firefox 19+ */
   &:-moz-placeholder           {color:#000000; opacity: 1;}/* Firefox 18- */
   &:-ms-input-placeholder      {color:#000000; opacity: 1;}
+
+  @media screen and (max-width: 670px) {
+    padding-top: 25px;
+  }
 }
 .contactform__textarea {
   border: 1px solid #cdd1d4;
@@ -40,4 +64,8 @@
   font-size: 16px;
   padding-bottom: 6px;
   display: block;
+
+  @media screen and (max-width: 670px) {
+    padding-top: 25px;
+  }
 }

@@ -5,8 +5,18 @@
 		url(../images/about-us-promo.jpg) no-repeat top center;
 	background-size: auto, auto, contain;
 
+	@media screen and (max-width: 670px) {
+		height: auto;
+		background: url(../images/about-us-promo-mob.jpg) no-repeat top center;
+		background-size: contain;
+	}
+
 	&__title {
 		padding-top: 130px;
+
+		@media screen and (max-width: 670px) {
+			padding-top: 35px;
+		}
 	}
 	&__info {
 		max-width: 730px;
@@ -18,11 +28,30 @@
 		line-height: 1.3;
 		text-align: center;
 		padding-top: 15px;
+
+		@media screen and (max-width: 670px) {
+			font-size: 15px;
+			padding: 0 25px 0 25px;
+		}
 	}
 	&__btn {
 		display: flex;
 		justify-content: center;
 		margin-top: 73px;
+
+		@media screen and (max-width: 670px) {
+			margin-top: 20px;
+			margin-bottom: 20px;
+		}
+	}
+
+	&__mobimg {
+		display: none;
+
+		@media screen and (max-width: 670px) {
+			display: block;
+			margin-top: -50px;
+		}
 	}
 
 }

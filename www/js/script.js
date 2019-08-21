@@ -128,7 +128,10 @@ $(document).ready(function() {
             items: 6
         },
         0:{
-          items: 3
+          items: 2,
+          dots : false,
+          nav : true,
+          navText : ["",""]
         }
       }
     });
