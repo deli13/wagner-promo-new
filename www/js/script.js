@@ -138,6 +138,26 @@ $(document).ready(function() {
         }
       }
     });
+
+   //функция открытия фильтра (для моб.) в новостях и акциях
+   function OpenNewsNav(e) {
+    //код функции
+    e.preventDefault();
+    $('.news__filter-mob').toggleClass('news__filter-mob--open');
+    $('.news__nav').slideToggle(300);
+  };
+
+  $("#filter-mob").on("click", OpenNewsNav);
+
+  //функция открытия поиска (для моб.) в новостях и акциях
+  function OpenSearch(e) {
+    //код функции
+    e.preventDefault();
+    $('.news__search-mob').toggleClass('news__search-mob--open');
+    $('.news__search').slideToggle(300);
+  };
+
+  $("#search-mob").on("click", OpenSearch);
   
 
 });
