@@ -158,6 +158,43 @@ $(document).ready(function() {
   };
 
   $("#search-mob").on("click", OpenSearch);
+
+  //слайдер новость
+   $("#new-slider").owlCarousel({       
+      pagination: false,     
+      loop : true,    
+      center : true,
+      autoplay: false,
+      lazyLoad: true,      
+      margin : 30,
+      dots : true,
+      items: 1,
+
+      responsive:{
+        960:{
+          nav : true,
+          navText : ["",""]
+        },
+        576:{
+          nav : false
+        },
+        0:{          
+          nav : false
+        }
+      }
+    });
+    //слайдер акция
+   $("#action-slider").owlCarousel({       
+      pagination: false,     
+      loop : true,    
+      center : true,
+      autoplay: false,
+      lazyLoad: true,      
+      margin : 30,
+      dots : true,
+      nav : false,
+      items: 1
+    });
   
 
 });

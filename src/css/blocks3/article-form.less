@@ -1,0 +1,94 @@
+.article-form {
+  margin-bottom: 50px;
+  margin-top: 23px;
+
+  @media screen and (max-width: 670px) {
+    margin-top: 10px;
+    margin-bottom: 0;
+  }
+
+  &__inner {
+    background-color: #f7f7f7;
+    padding-top: 60px;
+    padding-bottom: 90px;
+
+    @media screen and (max-width: 670px) {
+      padding-top: 30px;
+      padding-bottom: 35px;
+    }
+  }
+  &__title {
+    text-align: left;
+    padding-bottom: 20px;
+
+    @media screen and (max-width: 670px) {
+      font-size: 20px;
+      font-weight: 400;
+      padding-bottom: 0;
+    }
+  }
+  &__submit {
+    margin-top: 80px;
+    display: flex;
+    align-content: center;
+
+    @media screen and (max-width: 670px) {
+      margin-top: 30px;
+    }
+  }
+  &__btn {
+    margin: auto;
+
+    &.btn {
+      @media screen and (max-width: 670px) {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &__info {
+    padding-left: 0;
+    padding-right: 0;
+    max-width: 730px;
+    position: relative;
+    height: 100%;
+    margin: 0 auto;
+  }
+}
+
+.article-form__input,
+.article-form__textarea {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  color: #000000;
+  border-bottom: 1px solid #cdd1d4;
+  width: 100%;
+  padding-bottom: 6px;
+  font-size: 16px;
+  margin-top: 45px;
+  background-color: transparent;
+
+  &::-webkit-input-placeholder {color:#000000; opacity: 1;}
+  &::-moz-placeholder          {color:#000000; opacity: 1;}/* Firefox 19+ */
+  &:-moz-placeholder           {color:#000000; opacity: 1;}/* Firefox 18- */
+  &:-ms-input-placeholder      {color:#000000; opacity: 1;}
+
+  @media screen and (max-width: 670px) {
+    margin-top: 30px;
+    font-size: 13px;
+    font-weight: 400;
+  }
+}
+.article-form__textarea {
+  border: 1px solid #cdd1d4;
+  padding: 10px;
+}
+.article-form__label {
+  font-size: 16px;
+  padding-bottom: 6px;
+  display: block;
+
+  @media screen and (max-width: 670px) {
+    padding-top: 25px;
+  }
+}

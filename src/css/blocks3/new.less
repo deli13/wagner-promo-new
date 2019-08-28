@@ -4,18 +4,23 @@
 		padding-top: 20px;
 		padding-bottom: 45px;
 
+		@media screen and (max-width: 670px) {
+			padding-top: 0;
+			padding-bottom: 15px;
+			margin-left: -20px;
+    	margin-right: -20px;
+		}
+
 		img {
 			width: 100%;
 			max-width: 100%;
 		}
 	}
-	&__info {
 
-		p {
-			font-size: 18px;
-			line-height: 1.66;
-			margin-bottom: 30px;
-			text-align: justify;
+		@media screen and (max-width: 670px) {
+		.inner {
+			padding-left: 20px;
+			padding-right: 20px;
 		}
 	}
 }
