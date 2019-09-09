@@ -195,6 +195,12 @@ $(document).ready(function() {
       nav : false,
       items: 1
     });
+
+   //select2
+   var haveSelect = $("select");
+   if(haveSelect.length != 0 ) {
+      $('select').select2();
+   };
   
 
 });
