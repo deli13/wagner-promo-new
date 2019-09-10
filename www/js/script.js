@@ -201,6 +201,13 @@ $(document).ready(function() {
    if(haveSelect.length != 0 ) {
       $('select').select2();
    };
-  
+
+   //burger
+   function MobBurger(e) {
+    e.preventDefault();     
+    $('#burger').toggleClass('burger--open');
+    $('#top-menu').slideToggle(300);   
+  };
+  $("#burger").on("click", MobBurger);  
 
 });

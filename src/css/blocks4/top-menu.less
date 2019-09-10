@@ -1,0 +1,43 @@
+.top-menu {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 360px;
+  max-width: 100%;
+  padding: 95px 30px 85px 30px;
+  background: #ffffff;
+  z-index: 905;
+  box-shadow: 0px 0px 30px 0px rgba(34, 31, 32, 0.5);
+
+  @media screen and (max-width: 670px) {
+    width: 71%;
+    padding: 70px 20px 60px 20px;
+  }
+
+  &__list {
+    list-style: none;
+  }
+  &__link {
+    display: block;
+    text-decoration: none;
+    color: #000000;
+    font-weight: 600;
+    font-size: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #1b1c20;
+    text-transform: uppercase;
+    transition:  all 0.8s;
+
+    @media screen and (max-width: 670px) {
+      font-size: 14.5px;
+      padding-top: 15px;
+      padding-bottom: 15px;
+    }
+
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+}

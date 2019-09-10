@@ -5,6 +5,22 @@
   background: url(../images/burger.png) no-repeat;
   background-size: contain;
   cursor: pointer;
+  z-index: 916;
+  position: relative;
+
+  &--open {
+    width: 31px;
+    height: 23px;
+    background-image: url(../images/close-burger.svg); 
+    background-size: 24px 23px;
+    background-position: top right;    
+
+    @media screen and (max-width: 576px) {
+      width: 18px;
+      height: 17px;
+      background-size: 18px 17px;
+    }
+  }
 
   @media screen and (max-width: 576px) {
     width: 25px;
