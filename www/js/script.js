@@ -210,4 +210,9 @@ $(document).ready(function() {
   };
   $("#burger").on("click", MobBurger);  
 
+  /*Маска для телефона*/
+  $(function() {
+   $(".phone-mask").mask("+7 (999) 999-9999");
+  });
+
 });
