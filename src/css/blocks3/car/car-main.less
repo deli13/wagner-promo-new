@@ -10,13 +10,28 @@
 		padding-top: 5px;
 	}
 	&__price {
-		font-weight: 600;
-		font-size: 39px;
+		font-weight: 400;
+		font-size: 60px;
 		margin-top: 20px;
 		margin-bottom: 15px;
+		margin-right: 25px;
 
 		small {
-			font-size: 29px;
+			font-size: 33px;
+			margin-left: -15px;
+		}
+	}
+	&__price2 {
+		font-weight: 600;
+		font-size: 33px;
+		margin-top: 20px;
+		margin-bottom: 15px;
+		color: #0073bb;
+
+		small {
+			font-size: 31px;
+			font-weight: 400;
+			margin-left: -5px;
 		}
 	}
 	&__payment {
@@ -29,6 +44,15 @@
 	}
 	&__row {
 		margin-bottom: 35px;
+		justify-content: space-between !important;
+
+		h1 {
+			margin-bottom: 0;
+		}
+	}
+	&__row--main2 {
+		align-items: flex-end;
+		align-content: flex-end;
 	}
 
 	&__icons {
@@ -110,5 +134,28 @@
       }
     }
     
+  }
+  &__use {
+  	display: inline-block;
+  	padding-left: 60px;
+  	position: relative;
+
+  	font-size: 33px;
+  	font-weight: 400;
+  	padding-bottom: 7px;
+
+  	small {
+  		font-size: 23px;
+  	}
+  	&:before  {
+  		content: '';
+  		background: url('../images/tahometr-icon.svg');
+  		width: 48px;
+  		height: 40px;
+  		display: block;
+  		position: absolute;
+  		left: 0;
+  		top: 0;
+  	}
   }
 }
