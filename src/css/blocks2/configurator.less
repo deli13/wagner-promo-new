@@ -1,24 +1,24 @@
 .configurator {
 
   padding-top: 15px;
-  padding-bottom: 85px;
+  padding-bottom: 30px;
 
-  @media screen and (max-width: 670px) {
-    padding-bottom: 35px;
-  }
+  // @media screen and (max-width: 670px) {
+  //   padding-bottom: 35px;
+  // }
 
   &__main-info {
     
   }
 
   &__radio-block {
-    width: 352px;
+    width: 540px;
     max-width: 100%;
     display: flex;
     margin: auto;
     flex-wrap: wrap;
 
-    margin-bottom: 25px;
+    margin-bottom: 50px;
   }
   &__more-models-btn {
     position: absolute;
@@ -51,14 +51,14 @@
     font-size: 18px;
     display: inline-block;
     font-weight: 100;
-    color: #000000;
+    color: #0078be;
     text-decoration: none;
     position: relative;
     padding-right: 30px;
 
     @media screen and (max-width: 670px) {
       font-size: 16px;
-      color: #0054a4;
+      color: #0078be;
     }
 
     &:before {
@@ -75,7 +75,7 @@
       margin: auto;
       content: '';
       pointer-events: none;
-      background-image: url(../images/arrowDown.svg);
+      background-image: url(../images/arrowDown-blue.svg);
       background-position: right center;
       background-repeat: no-repeat;
       transition:  all 0.4s;
@@ -99,7 +99,7 @@
     display: none;
     font-size: 18px;
     font-weight: 100;
-    color: #8c939a;
+    color: #0078be;
     text-decoration: none;
     position: relative;
     padding-right: 25px;
@@ -147,8 +147,10 @@
 
   }
   &__price-slider {
-    padding-top: 30px;
+    padding-top: 50px;
     padding-bottom: 50px;
+    max-width: 730px;
+    margin: auto;
 
     @media screen and (max-width: 1160px) {
       width: 90%;
@@ -238,6 +240,34 @@
       @media screen and (max-width: 670px) {
         min-height: 55px;
       }
+    }
+  }
+
+  &__sorting {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 75px;
+
+    @media screen and (max-width: 960px) {
+      display: none;
+    }
+  }
+  &__sorting-item {
+    padding-right: 20px;
+    margin-right: 20px;
+    font-weight: 400;
+    font-size: 15px;
+    color: #afb9be;
+    text-transform: uppercase;
+    cursor: pointer;
+
+    background: url(../images/sort-icon.svg) no-repeat right center;
+    background-size: 14px 13px;
+
+    &--active {
+      background: url(../images/sort-icon-active.svg) no-repeat right center;
+      background-size: 14px 13px;
+      color: #000000;
     }
   }
 

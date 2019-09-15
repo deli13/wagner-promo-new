@@ -112,7 +112,7 @@
 										</div>
 									</div>
 
-									<button class="configurator__more-models-btn"></button>
+									<!-- <button class="configurator__more-models-btn"></button> -->
 								</div>
 							</div>
 
@@ -296,7 +296,14 @@
 						</div>
 
 						<div class="configurator__send-form">
-							<button class="btn">показать варианты</button>
+							<button class="btn">Подобрать</button>
+						</div>
+
+						<div class="configurator__sorting">
+							<span class="configurator__sorting-item configurator__sorting-item--active">цена</span>
+							<span class="configurator__sorting-item">год выпуска</span>
+							<span class="configurator__sorting-item">пробег</span>
+							<span class="configurator__sorting-item">дата размещения</span>
 						</div>
 
 					</form>
@@ -313,39 +320,114 @@
 				<div class="models">
 					
 					<div class="models__item">
+						<div class="models__action">
+							<span>выгода 1 500 000 <small class="ruble-icon">o</small></span>
+						</div>
 						<div class="models__photo">
 							<img src="images/model-photo.jpg" alt="Фото">
 						</div>
-						<div class="models__main">
-							<p class="models__name">Volkswagen Polo Comfortline</p>
-							<p class="models__price">11 464 000 <span>р</span></p>
-						</div>
-						<div class="models__second-main">
-							<p class="models__year">2013 <span>г.в.</span></p>
-							<p class="models__mileage">111 540 <span>км</span></p>
-						</div>
-						<div class="models__other-info">
-							<div class="models__options">
-								<p class="models__options-motor">1,6 л. | 110 л.с. | бензин</p>
-								<div class="models__optionts-car">
-									<p class="models__optionts-car-item models__optionts-car-item--carcass">Седан</p>
-									<p class="models__optionts-car-item models__optionts-car-item--transmission">АКПП</p>
-									<p class="models__optionts-car-item models__optionts-car-item--drive-unit">Передний</p>
-								</div>
-							</div>
-							<div class="models__credit">
-								<p class="models__credit-p">Кредит от 13,9%</p>
-								<p class="models__credit-p">от 12 500 <span class="models__small">р/мес</span></p>
+						<div class="models__info">
 
-								<div class="models__icons">
-									<a href="#" class="models__icon models__icon--like"></a>
-									<a href="#" class="models__icon models__icon--save"></a>
-								</div>
+							<div class="models__main">
+								<p class="models__name">Volkswagen</p>
+								<p class="models__subname">Polo Comfortline</p>							
 							</div>
+							<div class="models__icons">
+								<a href="#" class="models__icon models__icon--compare">
+									<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 31.99 30.99"><defs><style>.cls-1,.cls-4{fill:none;}.cls-2{clip-path:url(#clip-path);}.cls-3{fill:#fff;}.cls-4{stroke-width:2.13px;}</style><clipPath id="clip-path" transform="translate(0 0)"><rect class="cls-1" width="31.99" height="30.99"/></clipPath></defs><title>Asset 1</title><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><g class="cls-2"><path class="cls-3" d="M14.56,1.06s-5,0-5,5V17.43s0,5,5,5H25.93s5,0,5-5V6.06s0-5-5-5Z" transform="translate(0 0)"/><path class="cls-4" d="M14.56,1.06s-5,0-5,5V17.43s0,5,5,5H25.93s5,0,5-5V6.06s0-5-5-5Z" transform="translate(0 0)"/><path class="cls-3" d="M6.06,8.56s-5,0-5,5V24.93s0,5,5,5H17.43s5,0,5-5V13.56s0-5-5-5Z" transform="translate(0 0)"/><path class="cls-4" d="M6.06,8.56s-5,0-5,5V24.93s0,5,5,5H17.43s5,0,5-5V13.56s0-5-5-5Z" transform="translate(0 0)"/></g></g></g></svg>
+								</a>
+								<a href="#" class="models__icon models__icon--like">
+									<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 29.29 29.6"><defs><clipPath id="clip-path"><rect width="29.29" height="29.6"/></clipPath></defs><g data-name="Layer 2"><g data-name="Layer 1"><g class="cls-2"><path class="cls-3" d="M14.65,28.11l-2-1.95c-7-6.88-11.62-11.42-11.62-17,0-4.54,3.29-8.11,7.47-8.11a7.91,7.91,0,0,1,6.12,3.08,7.89,7.89,0,0,1,6.11-3.08c4.18,0,7.47,3.57,7.47,8.11,0,5.57-4.62,10.11-11.61,17Z"/></g></g></g></svg>
+								</a>								
+							</div>
+							<div class="models__prices">
+								<p class="models__price">11 464 000 <small class="ruble-icon">o</small></p>
+								<p class="models__price2">11 464 000 <small class="ruble-icon">o</small></p>
+							</div>
+							<div class="models__options">
+								<div class="row">
+									<div class="col-9">
+										<div class="models__optionts-car">
+											<p class="models__optionts-car-item models__optionts-car-item--carcass">Седан</p>
+											<p class="models__optionts-car-item models__optionts-car-item--transmission">АКПП</p>
+											<p class="models__optionts-car-item models__optionts-car-item--drive-unit">Передний</p>
+										</div>
+										<p class="models__options-motor">1,6 <small>л.</small> | 110 <small>л.с.</small> | бензин</p>
+									</div>
+									<div class="col-3 models__use">
+										<p class="models__mileage">111 540 <span>км</span></p>
+										<p class="models__year">2013 <span>г.в.</span></p>
+									</div>
+								</div>
+								
+							</div>
+
 							<div class="models__depot">
-								<p class="models__depot-availability">в наличии</p>
+								<p class="models__depot-availability">
+									<span class="models__depot-item">в наличии</span>
+									<span class="models__depot-item">Таллинское ш., д. 157</span>
+									<span class="models__depot-item">+7 (812) 328 4444</span>
+								</p>
 								<p class="models__depot-number">№ 079347</p>
 							</div>
+
+						</div>
+						
+						<a href="car-page.html" class="models__more-info-btn">Подробнее</a>
+					</div>
+
+					<div class="models__item">
+						<div class="models__action">
+							<span>выгода 1 500 000 <small class="ruble-icon">o</small></span>
+						</div>
+						<div class="models__photo">
+							<img src="images/model-photo.jpg" alt="Фото">
+						</div>
+						<div class="models__info">
+
+							<div class="models__main">
+								<p class="models__name">Mercedes-Benz</p>
+								<p class="models__subname">S-klasse Coupe (C215)</p>							
+							</div>
+							<div class="models__icons">
+								<a href="#" class="models__icon models__icon--compare models__icon--compare--active">
+									<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 31.99 30.99"><defs><style>.cls-1,.cls-4{fill:none;}.cls-2{clip-path:url(#clip-path);}.cls-3{fill:#fff;}.cls-4{stroke-width:2.13px;}</style><clipPath id="clip-path" transform="translate(0 0)"><rect class="cls-1" width="31.99" height="30.99"/></clipPath></defs><title>Asset 1</title><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><g class="cls-2"><path class="cls-3" d="M14.56,1.06s-5,0-5,5V17.43s0,5,5,5H25.93s5,0,5-5V6.06s0-5-5-5Z" transform="translate(0 0)"/><path class="cls-4" d="M14.56,1.06s-5,0-5,5V17.43s0,5,5,5H25.93s5,0,5-5V6.06s0-5-5-5Z" transform="translate(0 0)"/><path class="cls-3" d="M6.06,8.56s-5,0-5,5V24.93s0,5,5,5H17.43s5,0,5-5V13.56s0-5-5-5Z" transform="translate(0 0)"/><path class="cls-4" d="M6.06,8.56s-5,0-5,5V24.93s0,5,5,5H17.43s5,0,5-5V13.56s0-5-5-5Z" transform="translate(0 0)"/></g></g></g></svg>
+								</a>
+								<a href="#" class="models__icon models__icon--like">
+									<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 29.29 29.6"><defs><clipPath id="clip-path"><rect width="29.29" height="29.6"/></clipPath></defs><g data-name="Layer 2"><g data-name="Layer 1"><g class="cls-2"><path class="cls-3" d="M14.65,28.11l-2-1.95c-7-6.88-11.62-11.42-11.62-17,0-4.54,3.29-8.11,7.47-8.11a7.91,7.91,0,0,1,6.12,3.08,7.89,7.89,0,0,1,6.11-3.08c4.18,0,7.47,3.57,7.47,8.11,0,5.57-4.62,10.11-11.61,17Z"/></g></g></g></svg>
+								</a>								
+							</div>
+							<div class="models__prices">
+								<p class="models__price">11 464 000 <small class="ruble-icon">o</small></p>
+								<p class="models__price2">11 464 000 <small class="ruble-icon">o</small></p>
+							</div>
+							<div class="models__options">
+								<div class="row">
+									<div class="col-9">
+										<div class="models__optionts-car">
+											<p class="models__optionts-car-item models__optionts-car-item--carcass">Седан</p>
+											<p class="models__optionts-car-item models__optionts-car-item--transmission">АКПП</p>
+											<p class="models__optionts-car-item models__optionts-car-item--drive-unit">Передний</p>
+										</div>
+										<p class="models__options-motor">1,6 <small>л.</small> | 110 <small>л.с.</small> | бензин</p>
+									</div>
+									<div class="col-3 models__use">
+										<p class="models__mileage">111 540 <span>км</span></p>
+										<p class="models__year">2013 <span>г.в.</span></p>
+									</div>
+								</div>
+								
+							</div>
+
+							<div class="models__depot">
+								<p class="models__depot-availability">
+									<span class="models__depot-item">15-30 дней</span>
+									<span class="models__depot-item">Таллинское ш., д. 157</span>
+									<span class="models__depot-item">+7 (812) 328 4444</span>
+								</p>
+								<p class="models__depot-number">№ 079347</p>
+							</div>
+
 						</div>
 						
 						<a href="car-page.html" class="models__more-info-btn">Подробнее</a>
@@ -355,36 +437,51 @@
 						<div class="models__photo">
 							<img src="images/model-photo.jpg" alt="Фото">
 						</div>
-						<div class="models__main">
-							<p class="models__name">Volkswagen Polo Comfortline</p>
-							<p class="models__price">11 464 000 <span>р</span></p>
-						</div>
-						<div class="models__second-main">
-							<p class="models__year">2013 <span>г.в.</span></p>
-							<p class="models__mileage">111 540 <span>км</span></p>
-						</div>
-						<div class="models__other-info">
-							<div class="models__options">
-								<p class="models__options-motor">1,6 л. | 110 л.с. | бензин</p>
-								<div class="models__optionts-car">
-									<p class="models__optionts-car-item models__optionts-car-item--carcass">Седан</p>
-									<p class="models__optionts-car-item models__optionts-car-item--transmission">АКПП</p>
-									<p class="models__optionts-car-item models__optionts-car-item--drive-unit">Передний</p>
-								</div>
-							</div>
-							<div class="models__credit">
-								<p class="models__credit-p">Кредит от 13,9%</p>
-								<p class="models__credit-p">от 12 500 <span class="models__small">р/мес</span></p>
+						<div class="models__info">
 
-								<div class="models__icons">
-									<a href="#" class="models__icon models__icon--like"></a>
-									<a href="#" class="models__icon models__icon--save"></a>
-								</div>
+							<div class="models__main">
+								<p class="models__name">Volkswagen</p>
+								<p class="models__subname">Polo Comfortline</p>							
 							</div>
+							<div class="models__icons">
+								<a href="#" class="models__icon models__icon--compare">
+									<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 31.99 30.99"><defs><style>.cls-1,.cls-4{fill:none;}.cls-2{clip-path:url(#clip-path);}.cls-3{fill:#fff;}.cls-4{stroke-width:2.13px;}</style><clipPath id="clip-path" transform="translate(0 0)"><rect class="cls-1" width="31.99" height="30.99"/></clipPath></defs><title>Asset 1</title><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><g class="cls-2"><path class="cls-3" d="M14.56,1.06s-5,0-5,5V17.43s0,5,5,5H25.93s5,0,5-5V6.06s0-5-5-5Z" transform="translate(0 0)"/><path class="cls-4" d="M14.56,1.06s-5,0-5,5V17.43s0,5,5,5H25.93s5,0,5-5V6.06s0-5-5-5Z" transform="translate(0 0)"/><path class="cls-3" d="M6.06,8.56s-5,0-5,5V24.93s0,5,5,5H17.43s5,0,5-5V13.56s0-5-5-5Z" transform="translate(0 0)"/><path class="cls-4" d="M6.06,8.56s-5,0-5,5V24.93s0,5,5,5H17.43s5,0,5-5V13.56s0-5-5-5Z" transform="translate(0 0)"/></g></g></g></svg>
+								</a>
+								<a href="#" class="models__icon models__icon--like models__icon--like--active">
+									<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 29.29 29.6"><defs><clipPath id="clip-path"><rect width="29.29" height="29.6"/></clipPath></defs><g data-name="Layer 2"><g data-name="Layer 1"><g class="cls-2"><path class="cls-3" d="M14.65,28.11l-2-1.95c-7-6.88-11.62-11.42-11.62-17,0-4.54,3.29-8.11,7.47-8.11a7.91,7.91,0,0,1,6.12,3.08,7.89,7.89,0,0,1,6.11-3.08c4.18,0,7.47,3.57,7.47,8.11,0,5.57-4.62,10.11-11.61,17Z"/></g></g></g></svg>
+								</a>								
+							</div>
+							<div class="models__prices">
+								<p class="models__price">11 464 000 <small class="ruble-icon">o</small></p>
+								<p class="models__price2">11 464 000 <small class="ruble-icon">o</small></p>
+							</div>
+							<div class="models__options">
+								<div class="row">
+									<div class="col-9">
+										<div class="models__optionts-car">
+											<p class="models__optionts-car-item models__optionts-car-item--carcass">Седан</p>
+											<p class="models__optionts-car-item models__optionts-car-item--transmission">АКПП</p>
+											<p class="models__optionts-car-item models__optionts-car-item--drive-unit">Передний</p>
+										</div>
+										<p class="models__options-motor">1,6 <small>л.</small> | 110 <small>л.с.</small> | бензин</p>
+									</div>
+									<div class="col-3 models__use">
+										<p class="models__mileage">111 540 <span>км</span></p>
+										<p class="models__year">2013 <span>г.в.</span></p>
+									</div>
+								</div>
+								
+							</div>
+
 							<div class="models__depot">
-								<p class="models__depot-availability">в наличии</p>
+								<p class="models__depot-availability">
+									<span class="models__depot-item">в наличии</span>
+									<span class="models__depot-item">Таллинское ш., д. 157</span>
+									<span class="models__depot-item">+7 (812) 328 4444</span>
+								</p>
 								<p class="models__depot-number">№ 079347</p>
 							</div>
+
 						</div>
 						
 						<a href="car-page.html" class="models__more-info-btn">Подробнее</a>
@@ -394,75 +491,51 @@
 						<div class="models__photo">
 							<img src="images/model-photo.jpg" alt="Фото">
 						</div>
-						<div class="models__main">
-							<p class="models__name">Volkswagen Polo Comfortline</p>
-							<p class="models__price">11 464 000 <span>р</span></p>
-						</div>
-						<div class="models__second-main">
-							<p class="models__year">2013 <span>г.в.</span></p>
-							<p class="models__mileage">111 540 <span>км</span></p>
-						</div>
-						<div class="models__other-info">
-							<div class="models__options">
-								<p class="models__options-motor">1,6 л. | 110 л.с. | бензин</p>
-								<div class="models__optionts-car">
-									<p class="models__optionts-car-item models__optionts-car-item--carcass">Седан</p>
-									<p class="models__optionts-car-item models__optionts-car-item--transmission">АКПП</p>
-									<p class="models__optionts-car-item models__optionts-car-item--drive-unit">Передний</p>
-								</div>
-							</div>
-							<div class="models__credit">
-								<p class="models__credit-p">Кредит от 13,9%</p>
-								<p class="models__credit-p">от 12 500 <span class="models__small">р/мес</span></p>
+						<div class="models__info">
 
-								<div class="models__icons">
-									<a href="#" class="models__icon models__icon--like"></a>
-									<a href="#" class="models__icon models__icon--save"></a>
-								</div>
+							<div class="models__main">
+								<p class="models__name">Volkswagen</p>
+								<p class="models__subname">Polo Comfortline</p>							
 							</div>
+							<div class="models__icons">
+								<a href="#" class="models__icon models__icon--compare">
+									<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 31.99 30.99"><defs><style>.cls-1,.cls-4{fill:none;}.cls-2{clip-path:url(#clip-path);}.cls-3{fill:#fff;}.cls-4{stroke-width:2.13px;}</style><clipPath id="clip-path" transform="translate(0 0)"><rect class="cls-1" width="31.99" height="30.99"/></clipPath></defs><title>Asset 1</title><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><g class="cls-2"><path class="cls-3" d="M14.56,1.06s-5,0-5,5V17.43s0,5,5,5H25.93s5,0,5-5V6.06s0-5-5-5Z" transform="translate(0 0)"/><path class="cls-4" d="M14.56,1.06s-5,0-5,5V17.43s0,5,5,5H25.93s5,0,5-5V6.06s0-5-5-5Z" transform="translate(0 0)"/><path class="cls-3" d="M6.06,8.56s-5,0-5,5V24.93s0,5,5,5H17.43s5,0,5-5V13.56s0-5-5-5Z" transform="translate(0 0)"/><path class="cls-4" d="M6.06,8.56s-5,0-5,5V24.93s0,5,5,5H17.43s5,0,5-5V13.56s0-5-5-5Z" transform="translate(0 0)"/></g></g></g></svg>
+								</a>
+								<a href="#" class="models__icon models__icon--like">
+									<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 29.29 29.6"><defs><clipPath id="clip-path"><rect width="29.29" height="29.6"/></clipPath></defs><g data-name="Layer 2"><g data-name="Layer 1"><g class="cls-2"><path class="cls-3" d="M14.65,28.11l-2-1.95c-7-6.88-11.62-11.42-11.62-17,0-4.54,3.29-8.11,7.47-8.11a7.91,7.91,0,0,1,6.12,3.08,7.89,7.89,0,0,1,6.11-3.08c4.18,0,7.47,3.57,7.47,8.11,0,5.57-4.62,10.11-11.61,17Z"/></g></g></g></svg>
+								</a>								
+							</div>
+							<div class="models__prices">
+								<p class="models__price">11 464 000 <small class="ruble-icon">o</small></p>
+								<p class="models__price2">11 464 000 <small class="ruble-icon">o</small></p>
+							</div>
+							<div class="models__options">
+								<div class="row">
+									<div class="col-9">
+										<div class="models__optionts-car">
+											<p class="models__optionts-car-item models__optionts-car-item--carcass">Седан</p>
+											<p class="models__optionts-car-item models__optionts-car-item--transmission">АКПП</p>
+											<p class="models__optionts-car-item models__optionts-car-item--drive-unit">Передний</p>
+										</div>
+										<p class="models__options-motor">1,6 <small>л.</small> | 110 <small>л.с.</small> | бензин</p>
+									</div>
+									<div class="col-3 models__use">
+										<p class="models__mileage">111 540 <span>км</span></p>
+										<p class="models__year">2013 <span>г.в.</span></p>
+									</div>
+								</div>
+								
+							</div>
+
 							<div class="models__depot">
-								<p class="models__depot-availability">в наличии</p>
+								<p class="models__depot-availability">
+									<span class="models__depot-item">в наличии</span>
+									<span class="models__depot-item">Таллинское ш., д. 157</span>
+									<span class="models__depot-item">+7 (812) 328 4444</span>
+								</p>
 								<p class="models__depot-number">№ 079347</p>
 							</div>
-						</div>
-						
-						<a href="car-page.html" class="models__more-info-btn">Подробнее</a>
-					</div>
 
-					<div class="models__item">
-						<div class="models__photo">
-							<img src="images/model-photo.jpg" alt="Фото">
-						</div>
-						<div class="models__main">
-							<p class="models__name">Volkswagen Polo Comfortline</p>
-							<p class="models__price">11 464 000 <span>р</span></p>
-						</div>
-						<div class="models__second-main">
-							<p class="models__year">2013 <span>г.в.</span></p>
-							<p class="models__mileage">111 540 <span>км</span></p>
-						</div>
-						<div class="models__other-info">
-							<div class="models__options">
-								<p class="models__options-motor">1,6 л. | 110 л.с. | бензин</p>
-								<div class="models__optionts-car">
-									<p class="models__optionts-car-item models__optionts-car-item--carcass">Седан</p>
-									<p class="models__optionts-car-item models__optionts-car-item--transmission">АКПП</p>
-									<p class="models__optionts-car-item models__optionts-car-item--drive-unit">Передний</p>
-								</div>
-							</div>
-							<div class="models__credit">
-								<p class="models__credit-p">Кредит от 13,9%</p>
-								<p class="models__credit-p">от 12 500 <span class="models__small">р/мес</span></p>
-
-								<div class="models__icons">
-									<a href="#" class="models__icon models__icon--like"></a>
-									<a href="#" class="models__icon models__icon--save"></a>
-								</div>
-							</div>
-							<div class="models__depot">
-								<p class="models__depot-availability">в наличии</p>
-								<p class="models__depot-number">№ 079347</p>
-							</div>
 						</div>
 						
 						<a href="car-page.html" class="models__more-info-btn">Подробнее</a>
@@ -474,30 +547,34 @@
 
 		</section>		
 
-		<footer class="footer page-footer">
-			<div class="footer__maininfo">
-				<div class="footer__menu">
-					<nav class="menu">
-						<ul class="menu__list">
-							<li class="menu__item"><a href="about-us.html" class="menu__link">О компании</a></li>
-							<li class="menu__item"><a href="catalog.html" class="menu__link">Автомобили</a></li>
-							<li class="menu__item"><a href="actions.html" class="menu__link">Акции</a></li>
-							<li class="menu__item"><a href="news.html" class="menu__link">Новости</a></li>
-							<li class="menu__item"><a href="#" class="menu__link">Контакты</a></li>
-							<li class="menu__item"><a href="#" class="menu__link">Личный кабинет</a></li>
-						</ul>
-					</nav>
-				</div>
-				<div class="footer__copyright">WAGNER © 2019</div>
+	</main>
+
+	<footer class="footer page-footer">
+		<div class="footer__maininfo">
+			<div class="footer__menu">
+				<nav class="menu">
+					<ul class="menu__list">
+						<li class="menu__item"><a href="about-us.html" class="menu__link">О компании</a></li>
+						<li class="menu__item"><a href="catalog.html" class="menu__link">Автомобили</a></li>
+						<li class="menu__item"><a href="actions.html" class="menu__link">Акции</a></li>
+						<li class="menu__item"><a href="news.html" class="menu__link">Новости</a></li>
+						<li class="menu__item"><a href="#" class="menu__link">Контакты</a></li>
+						<li class="menu__item"><a href="#" class="menu__link">Личный кабинет</a></li>
+					</ul>
+				</nav>
 			</div>
 			<div class="footer__social">
-				<a href="#" class="footer__social-link"><img src="images/vk-icon.png" alt="Vk"></a>
-				<a href="#" class="footer__social-link"><img src="images/fb-icon.png" alt="Fb"></a>
-				<a href="#" class="footer__social-link"><img src="images/inst-icon.png" alt="Instagram"></a>
+				<a href="#" class="footer__social-link"><img src="images/vk-icon.svg" alt="Vk"></a>
+				<a href="#" class="footer__social-link"><img src="images/fb-icon.svg" alt="Fb"></a>
+				<a href="#" class="footer__social-link"><img src="images/inst-icon.svg" alt="Instagram"></a>
 			</div>
-		</footer>
-
-	</main>
+			<div class="footer__text">
+				Обращаем Ваше внимание на то, что данный интернет-сайт носит исключительно информационный характер и ни при каких условиях не является публичной офертой, определяемой положениями статьи 437 (2) Гражданского кодекса Российской Федерации. <a href="#">Подробнее</a>
+			</div>
+			<div class="footer__copyright">WAGNER © 2019</div>
+		</div>
+		
+	</footer>
 
 	<script src="js/jquery-3.4.1.min.js"></script>
 	<script src="js/jquery.fullPage.js"></script>
@@ -506,6 +583,7 @@
 	<script src="js/jquery-ui-slider.min.js"></script>
 	<script src="js/jquery.ui.touch-punch.min.js"></script>
 	<script src="js/jquery.mask.min.js"></script>
+	<script src="js/jquery.validate.js"></script>
 	<script src="js/script.js"></script>
 	
 </body>

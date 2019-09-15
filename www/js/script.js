@@ -89,8 +89,8 @@ $(document).ready(function() {
       nav:false,
       pagination: false,     
       loop : true,    
-      center : false,
-      items : 4,
+      center : true,
+      items : 6,
       autoplay: false,
       lazyLoad: true,
       margin: 30,
@@ -120,21 +120,27 @@ $(document).ready(function() {
       center : true,
       autoplay: false,
       lazyLoad: true,      
-      margin : 30,
       dots : true,
 
       responsive:{
+        1160:{
+          items: 6,
+          margin : 30
+        },
         960:{
-          items: 6
+          items: 4,
+          margin : 30
         },
         576:{
-            items: 4
+            items: 4,
+            margin : 15
         },
         0:{
           items: 2,
           dots : false,
           nav : true,
-          navText : ["",""]
+          navText : ["",""],
+          margin : 15
         }
       }
     });
@@ -214,5 +220,82 @@ $(document).ready(function() {
   $(function() {
    $(".phone-mask").mask("+7 (999) 999-9999");
   });
+
+  //Form validate
+  $('.article-form__form').validate({
+    rules: {
+      name: {
+        required: true,
+        minlength: 3
+      },
+      phone: {
+        required: true
+      },
+      email: {
+        required: true
+      }
+    },
+    messages: {
+      name: {
+        required: "Поле 'Имя' обязательно к заполнению",
+        minlength: "Введите не менее 3-ех символов в поле 'Имя'"
+      },
+      phone: {
+        required: "Поле 'Телефон' обязательно к заполнению"
+      },
+      email: {
+       required: "Поле 'Email' обязательно к заполнению"
+     }
+   },
+   submitHandler: function(form) {
+      $('.form-error').html('Форма отправлена');
+      $('.form-error').css('display', "block");
+      $('.form-error').css('color', "green");
+    },
+    invalidHandler: function() {
+      $('.form-error').css('display', "block");
+    }
+ });
+
+  $('.contactform__form').validate({
+    rules: {
+      name: {
+        required: true
+      },
+      phone: {
+        required: true
+      },
+      email: {
+        required: true
+      },
+      comment: {
+        required: true
+      }
+    },
+    messages: {
+      name: {
+        required: "Поле 'Имя' обязательно к заполнению"
+      },
+      phone: {
+        required: "Поле 'Телефон' обязательно к заполнению"
+      },
+      email: {
+       required: "Поле 'Email' обязательно к заполнению"
+     },
+     comment: {
+       required: "Поле 'Сообщение' обязательно к заполнению"
+     }
+   },
+   submitHandler: function(form) {
+      $('.form-error').html('Форма отправлена');
+      $('.form-error').css('display', "block");
+      $('.form-error').css('color', "green");
+    },
+    invalidHandler: function() {
+      $('.form-error').css('display', "block");
+    }
+ });
+
+   
 
 });

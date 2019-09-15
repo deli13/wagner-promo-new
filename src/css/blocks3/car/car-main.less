@@ -30,32 +30,85 @@
 	&__row {
 		margin-bottom: 35px;
 	}
-	&__btns {
-		margin-bottom: 25px;
-		display: flex;
-		flex-wrap: wrap;
-	}
-	&__btn {
-		display: flex;
-		padding-left: 40px;
-		height: 31px;
-		align-items: center;
-		align-content: center;
-		font-size: 15px;
-		color: #b1b0b0;
-		text-decoration: none;
-		margin-right: 38px;
-		background-repeat: no-repeat;
-		background-position: left center;
-		background-size: contain;
 
-		&--like {
-			background-image: url(../images/like-icon.svg);
-			background-size: 29px 29px;
-		}
-		&--compare {
-			background-image: url(../images/compare-icon.svg);
-			background-size: 32px 31px;
-		}
-	}
+	&__icons {
+	    display: flex;
+	    flex-wrap: wrap;
+	    justify-content: flex-end;
+	    margin-top: 20px;
+
+	    @media screen and (max-width: 960px) {
+	      top: 10px;
+	    }
+
+	    @media screen and (max-width: 670px) {
+	      justify-content: center;
+	      padding-bottom: 30px;
+	      padding-top: 10px;
+	    }
+	  }
+	&__icon {
+    display: flex;
+    margin-left: 20px;
+    height: 45px;
+    width: 45px;
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: contain; 
+
+    @media screen and (max-width: 960px) {
+      margin-left: 7px;
+      margin-right: 7px;
+      width: 31px;
+      height: 31px;
+    }
+    &:hover {
+      svg {
+          stroke: #1b1c20;
+        }
+    }
+
+     &--like {
+      // background-image: url(../images/like-icon.svg);
+      // background-size: 25px 25px;
+      svg {
+        width: 45px;
+        height: 45px;
+        stroke:#bcc2c7;
+        stroke-miterlimit:10;
+        stroke-width:2.13px;
+        fill: none;
+
+        @media screen and (max-width: 960px) {
+          width: 31px;
+          height: 31px;
+        }
+      }
+      &--active {
+        svg {
+          stroke: #e7183e;
+        }
+      }
+    }
+    &--compare {
+      //background-image: url(../images/compare-icon.svg);
+      //background-size: 45px 45px;
+      svg {
+        width: 45px;
+        height: 45px;
+        stroke:#bcc2c7;
+
+        @media screen and (max-width: 960px) {
+          width: 31px;
+          height: 31px;
+        }
+      }
+      &--active {
+        svg {
+          stroke: #2089c5;
+        }
+      }
+    }
+    
+  }
 }
