@@ -203,9 +203,16 @@ $(document).ready(function() {
     });
 
    //select2
-   var haveSelect = $("select");
+   var haveSelect = $(".input__select");
    if(haveSelect.length != 0 ) {
-      $('select').select2();
+      $('.input__select').select2();
+   };
+
+   var haveSelectCar = $(".input__forSelectCar");
+   if(haveSelectCar.length != 0 ) {
+      $('.input__forSelectCar select').select2({
+        theme: 'car-select-list'
+      });
    };
 
    //burger
@@ -295,6 +302,48 @@ $(document).ready(function() {
       $('.form-error').css('display', "block");
     }
  });
+
+  $('.car-form__form').validate({
+    rules: {
+      name: {
+        required: true
+      },
+      phone: {
+        required: true
+      },
+      email: {
+        required: true
+      }
+    },
+    messages: {
+      name: {
+        required: "Поле 'Имя' обязательно к заполнению"
+      },
+      phone: {
+        required: "Поле 'Телефон' обязательно к заполнению"
+      },
+      email: {
+       required: "Поле 'Email' обязательно к заполнению"
+     }
+   },
+   submitHandler: function(form) {
+      $('.form-error').html('Форма отправлена');
+      $('.form-error').css('display', "block");
+      $('.form-error').css('color', "green");
+    },
+    invalidHandler: function() {
+      $('.form-error').css('display', "block");
+    }
+ });
+
+  //Аккордион
+  function Accordion(e) {
+    e.preventDefault();     
+    $(this).parent().toggleClass('accordion--open');
+    $(this).parent().find(".accordion__info").slideToggle(300);   
+    $(this).parent().find(".accordion__icon").toggleClass("accordion__icon--open");
+  };
+  $(".accordion__main").on("click", Accordion);
 
    
 

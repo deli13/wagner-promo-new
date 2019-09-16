@@ -146,6 +146,14 @@ img {
 	&--actions {
 		border-color: #c84455;
 	}
+	&--next {
+		&__text {
+			display: inline-block;
+			padding-right: 31px;
+			position: relative;
+			vertical-align: middle;
+		}
+	}
 
 	@media screen and (max-width: 670px) {
 		margin-bottom: 15px;
@@ -154,4 +162,40 @@ img {
 		font-size: 13px;
 		box-shadow: none;
 	}
+}
+.btn-icon-next {
+	display: inline-block;
+	vertical-align: middle;
+	padding-bottom: 5px;
+	position: absolute;
+	top: -2px;
+	right: 0;
+
+	svg {
+		width: 16px;
+		height: 8px;
+		fill: #555555;
+		transform: rotate(-90deg);
+		transition: all 0.2s ease;
+
+		&:last-child {
+			margin-left: -12px;
+		}
+	}
+}
+.btn--next:hover {
+	.btn-icon-next {
+		animation: gonext .8s 3; 
+	} 
+}
+@keyframes gonext {
+  0% {
+    right: 0px;
+  }
+  50% {
+	right: -3px;	
+  }
+  100% {
+   right: 0px;
+  }
 }
