@@ -2,8 +2,16 @@
 
 	margin-bottom: 65px;
 
+	@media screen and (max-width: 670px) {
+		margin-bottom: 30px;
+	}
+
 	&__mainphoto {
 		margin-bottom: 25px;
+
+		@media screen and (max-width: 670px) {
+			display: none;
+		}
 
 		img {
 			width: 100%;
@@ -11,11 +19,19 @@
 	}
 	.owl-item {
 		opacity: 0.7;
+
+		@media screen and (max-width: 670px) {
+			opacity: 1;
+		}
 	}
 
 	.owl-item.active.center {
 		border: 2px solid red;
 		opacity: 1;
+
+		@media screen and (max-width: 670px) {
+			border: none;
+		}
 	}
 }
 .car-number {
@@ -25,4 +41,52 @@
     position: absolute;
     right: 25px;
     top: 0px;
+
+    @media screen and (max-width: 670px) {
+    	position: relative;
+    	right: auto;
+    	top: auto;
+    	text-align: center;
+    	padding-bottom: 15px;
+    }
+}
+						
+.car-gallery__slider .owl-dots {
+      display: none;
+
+      @media screen and (max-width: 670px) {
+        margin-top: 0;
+        margin-top: 20px;
+        margin-bottom: 0px;
+	      display: flex;
+	      justify-content: center;
+	      z-index: 5;
+	      position: relative;
+      }
+ }
+.car-gallery__slider.owl-carousel button.owl-dot {
+  display: none;
+
+    @media screen and (max-width: 670px) {
+      width: 8px;
+      height: 8px;
+      border: none;
+      background: #bcc2c6;
+      margin-left: 4px;
+      margin-right: 4px;
+      border-radius: 50%;
+      display: block;
+    }
+}
+.car-gallery__slider.owl-carousel button.owl-dot.active {
+  
+    display: none;
+    
+
+    @media screen and (max-width: 670px)  {
+      background: #e71318;
+      background-size: 6px 6px;
+      border-color: #1b1c20;
+      display: block;
+    }
 }

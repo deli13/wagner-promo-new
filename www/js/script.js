@@ -94,7 +94,30 @@ $(document).ready(function() {
       autoplay: false,
       lazyLoad: true,
       margin: 30,
-      dots: false
+      dots: false,
+
+      responsive: {
+        1160:{
+          items: 6,
+          margin : 30,
+          dots: false
+        },
+        960:{
+          items: 4,
+          margin : 30,
+          dots: false
+        },
+        671:{
+          items: 4,
+          margin : 15,
+          dots: false
+        },
+        0:{
+          items: 1,
+          margin: 0,
+          dots: true
+        }
+      }
     });
 
   $('#car-gallery-slider .owl-item').on('click', function(e) {
