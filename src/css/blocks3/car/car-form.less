@@ -4,24 +4,44 @@
 	padding-top: 85px;
 	padding-bottom: 85px;
 
+  @media screen and (max-width: 960px) {
+    padding-top: 65px;
+  }
+
+  @media screen and (max-width: 670px) {
+    padding-bottom: 45px;
+  }
+
 	&__title {
 		padding-bottom: 30px;
+
+    @media screen and (max-width: 960px) {
+      padding-bottom: 15px;
+    }
 	}
 
 	&__subtitle {
     padding-bottom: 45px;
     line-height: 1.6;
 
+    @media screen and (max-width: 960px) {
+      font-size: 27px;
+    }
+
     @media screen and (max-width: 670px) {
-      font-size: 20px;
-      font-weight: 400;
+      font-size: 14px;
       padding-bottom: 0;
+      padding-bottom: 30px;
     }
 
     span {
     	font-weight: 400;
     	display: block;
     	padding-top: 10px;
+
+      @media screen and (max-width: 670px) {
+        padding-top: 0;
+      }
     }
   }
   &__submit {
@@ -30,7 +50,7 @@
     align-content: center;
 
     @media screen and (max-width: 670px) {
-      margin-top: 30px;
+      margin-top: 40px;
     }
   }
   &__btn {
@@ -79,6 +99,7 @@
     margin-top: 30px;
     font-size: 13px;
     font-weight: 400;
+    text-align: center;
   }
   &.error {
     border-bottom-color: #ff0000;
@@ -138,6 +159,11 @@
     background-position: right center;
     background-repeat: no-repeat;
     transition: transform .5s ease-in-out;
+
+    @media screen and (max-width: 670px) {
+      width: 15px;
+      height: 8px;
+    }
 }
 .input__forSelectCar .select2-container--car-select-list.select2-container--open .select2-selection--single .select2-selection__arrow b {
     transform: rotateX(180deg);
@@ -163,6 +189,13 @@
 	font-size: 23px;
 	font-weight: 400;
 	color: #181716;
+
+  @media screen and (max-width: 670px) {
+    font-size: 13px;
+    margin: auto;
+    padding-right: 0;
+    font-weight: 600;
+  }
 }
 .input__forSelectCar .select2-container--car-select-list .select2-selection--single .select2-selection__arrow {
 	position: absolute;

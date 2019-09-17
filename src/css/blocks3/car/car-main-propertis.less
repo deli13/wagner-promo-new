@@ -2,20 +2,38 @@
 	margin-top: 60px;
 	margin-bottom: 80px;
 
+	@media screen and (max-width: 960px) {
+		margin-top: -15px;
+	}
+
 	@media screen and (max-width: 670px) {
 		margin-top: 0px;
+		margin-bottom: 35px;
 	}
 
 	&__row {
 
+		@media screen and (max-width: 670px) {
+	      margin-left: -5px !important;
+	      margin-right: -5px !important;
+
+	      > div {
+	        padding-left: 5px !important;
+	        padding-right: 5px !important;
+	      }
+	    }
+
 	}
 	&__col {
 
-		@media screen and (max-width: 670px) {
-			width: 33%;
+		@media screen and (max-width: 1160px) {
 			display: flex;
 			flex-direction: column;
 			justify-content: space-between;
+		}
+
+		@media screen and (max-width: 670px) {
+			width: 33%;
 			margin-bottom: 20px;
 		}
 
@@ -30,31 +48,68 @@
 
 		@media screen and (max-width: 670px) {
 			font-size: 11px;
+			padding-bottom: 10px;
+
+			padding-top: 55px;
 		}
 
 		&--volume {
 			background: url(../images/propertes-01.svg) no-repeat center 24px;
 			background-size: 45px 45px;
+
+			@media screen and (max-width: 670px) {
+				background-position: center 12px;
+				background-size: 30px 30px;
+			}
 		}
 		&--power {
 			background: url(../images/propertes-02.svg) no-repeat center 18px;
 			background-size: 61px 45px;
+
+			@media screen and (max-width: 670px) {
+				background-position: center 14px;
+				background-size: 41px 31px;
+			}
 		}
 		&--fuel {			
 			background: url(../images/propertes-03.svg) no-repeat center 20px;
 			background-size: 38px 45px;
+
+			@media screen and (max-width: 670px) {
+				background-position: center 16px;
+				background-size: 25px 30px;
+			}
 		}
 		&--transmission {			
 			background: url(../images/propertes-04.svg) no-repeat center 21px;
 			background-size: 45px 45px;
+
+			@media screen and (max-width: 670px) {
+				background-position: center 14px;
+				background-size: 30px 30px;
+			}
 		}
 		&--unit {			
 			background: url(../images/propertes-05.svg) no-repeat center 20px;
 			background-size: 37px 45px;
+
+			@media screen and (max-width: 670px) {
+				background-position: center 16px;
+				background-size: 25px 30px;
+			}
 		}
 		&--carcass {			
 			background: url(../images/propertes-06.svg) no-repeat center 38px;
 			background-size: 68px 27px;
+
+			@media screen and (max-width: 670px) {
+				background-position: center 27px;
+				background-size: 45px 18px;
+			}
+		}
+
+		sup {
+			position: absolute;
 		}
 	}
 	&__info {
@@ -62,5 +117,9 @@
 		color: #181716;
 		font-size: 23px;
 		text-align: center;
+
+		@media screen and (max-width: 670px) {
+			font-size: 18px;
+		}
 	}
 }

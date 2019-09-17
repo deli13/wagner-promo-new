@@ -368,6 +368,15 @@ $(document).ready(function() {
   };
   $(".accordion__main").on("click", Accordion);
 
+  //закрытие аккордина по доп. кнопке на моб.
+  function AccordionClose(e) {
+    e.preventDefault();     
+    $(this).parent().parent().toggleClass('accordion--open');
+    $(this).parent().parent().find(".accordion__info").slideToggle(300);   
+    $(this).parent().parent().find(".accordion__icon").toggleClass("accordion__icon--open");
+  };
+  $(".accordion__icon--mob").on("click", AccordionClose);
+
    
 
 });
