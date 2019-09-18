@@ -245,6 +245,7 @@ $(document).ready(function() {
     $('#top-menu').slideToggle(300);   
   };
   $("#burger").on("click", MobBurger);  
+  $("#burger-close").on("click", MobBurger);  
 
   /*Маска для телефона*/
   $(function() {

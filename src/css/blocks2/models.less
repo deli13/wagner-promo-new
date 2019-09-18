@@ -17,6 +17,7 @@
     display: flex;
     align-content: center;
     align-items: center;
+    cursor: pointer;
 
     span {
       display: none;
@@ -30,6 +31,21 @@
         text-transform: none;
         font-size: 12px;
       }
+    }
+      &:hover {
+        background: url(../images/specialoffer-bg-hover.svg) no-repeat;
+        width: 150px;
+
+        span {
+          display: block;
+        }
+      }
+
+    @media screen and (max-width: 960px) {
+      left: 5px;
+    }
+    @media screen and (max-width: 670px) {
+      top: 41px;
     }
   }
 
@@ -55,23 +71,25 @@
       padding: 30px 10px 30px;
     }
 
-    &:hover {
-      border-top: none;
-      box-shadow: 0px 0px 30px 0px rgba(34, 31, 32, 0.5); 
+    @media screen and (min-width: 1025px) {
+      &:hover {
+        border-top: none;
+        box-shadow: 0px 0px 30px 0px rgba(34, 31, 32, 0.5); 
 
-      @media screen and (max-width: 960px) {
-        box-shadow: none;
-      }
+        @media screen and (max-width: 960px) {
+          box-shadow: none;
+        }
 
-      .models__action {
-        background: url(../images/specialoffer-bg-hover.svg) no-repeat;
-        width: 150px;
+        .models__action {
+          background: url(../images/specialoffer-bg-hover.svg) no-repeat;
+          width: 150px;
 
-        span {
-          display: block;
+          span {
+            display: block;
+          }
         }
       }
-    }
+    }    
 
     &:after {
       content: '';

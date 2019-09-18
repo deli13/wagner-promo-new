@@ -210,8 +210,16 @@
     color: #0078be;
     background: url(../images/car-select.svg) no-repeat 20px center;
     background-size: 35px 35px;
+
+    @media screen and (max-width: 670px) {
+      background-position: center 10px;
+      padding-top: 55px;
+    }
 }
-.select2-container--car-select-list .select2-results__option--highlighted[aria-selected]{
+// .select2-container--car-select-list .select2-results__option--highlighted[aria-selected]{
+//     color: #0078be;
+// }
+.select2-container--car-select-list .select2-results__option--highlighted:hover{
     color: #0078be;
 }
 .select2-container--car-select-list .select2-search--dropdown {
@@ -229,6 +237,13 @@
 	font-weight: 400;
 	font-size: 23px;
 	padding-left: 80px;
+
+  @media screen and (max-width: 670px) {
+    font-size: 16px;
+    padding: 15px 10px;
+    text-align: center;
+    text-transform: none;
+  }
 }
 .select2-container--car-select-list .select2-results__options {
 	padding-top: 20px;

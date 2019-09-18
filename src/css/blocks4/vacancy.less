@@ -1,0 +1,143 @@
+.vacancy {
+
+  padding-bottom: 30px;
+
+  @media screen and (max-width: 670px) {
+    padding-bottom: 0;
+  }
+
+  &__info {
+    position: relative;
+  }
+  &__top-block {
+    padding-bottom: 20px;
+
+    @media screen and (max-width: 960px) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      align-content: center;
+    }
+
+    @media screen and (max-width: 670px) {
+      flex-direction: column;
+      align-items: center;
+      align-content: center;
+    }
+  }
+
+  &__btns {
+    position: absolute;
+    top: 43px;
+    right: 0;
+
+    @media screen and (max-width: 960px) {
+      position: relative;
+      top: auto;
+      right: auto;
+    }
+
+    @media screen and (max-width: 670px) {
+      position: relative;
+      top: auto;
+      right: auto;
+      padding-bottom: 15px;
+      padding-top: 5px;
+    }
+
+    @media screen and (max-width: 576px) {   
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      align-items: center;
+      align-content: center;
+      padding-bottom: 0;
+    }
+  }
+
+  &__btn {
+    font-size: 18px;
+    font-weight: 400;
+    position: relative;
+    padding-left: 31px;
+    margin-right: 31px;
+    color: #000000;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    z-index: 51;
+
+    @media screen and (max-width: 576px) {
+      margin-right: 0;
+      padding: 20px 0 20px 0;
+      font-size: 15px;
+      color: #828c96;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+    &:hover {
+      opacity: 0.8;
+    }
+    &:before {
+      content: '';
+      display: block;
+      position: absolute;
+      left: 0;
+      margin: auto;
+      background-size: contain;
+      background-repeat: no-repeat;
+
+      @media screen and (max-width: 576px) {
+        top: 0;
+      left: 0;
+      right: 0;
+      }
+    }
+
+    &--download {
+      &:before {
+        background-image: url(../images/download-icon.svg);
+        width: 23px;
+        height: 20px;
+        top: 0px;
+
+        @media screen and (max-width: 576px) {
+          background-image: url(../images/download-icon-gray.svg);
+          width: 20px;
+          height: 18px;
+        }
+      }
+    }
+    &--send {
+      &:before {
+        background-image: url(../images/send-icon.svg);
+        width: 22px;
+        height: 17px;
+        top: 4px;
+
+        @media screen and (max-width: 576px) {
+          background-image: url(../images/send-icon-gray.svg);
+          width: 20px;
+          height: 15px;
+          top: 5px;
+        }
+      }
+    }
+  }
+
+  &__name {
+    @media screen and (max-width: 670px) {
+      font-weight: 600;
+      font-size: 16px;
+    }
+  }
+  &__main {
+    @media screen and (max-width: 670px) {
+      font-size: 15px !important;
+      font-weight: 600;
+      text-align: center;
+    }
+  }
+}
