@@ -1,7 +1,8 @@
 'use strict';
 
 const { series, parallel, src, dest, watch } = require('gulp');
-const less = require('gulp-less');
+// const less = require('gulp-less');
+const scss =require("gulp-sass");
 const postcss = require('gulp-postcss');
 const mqpacker = require('css-mqpacker');
 const sourcemaps = require('gulp-sourcemaps');
@@ -15,10 +16,10 @@ const path = {
         html : 'www/*.html'
     },
     src: {
-        style: 'src/css/*.less'
+        style: 'src/css/*.scss'
     },
     watch: {
-        srcStyle   : 'src/css/**/*.less',
+        srcStyle   : 'src/css/**/*.scss',
         buildStyle : 'www/css/*.css',
         html       : 'www/*.html'
     }
@@ -28,7 +29,7 @@ const path = {
 function styles() {
     return src(path.src.style)
         .pipe(sourcemaps.init())
-        .pipe(less()
+        .pipe(scss()
             .on('error', notify.onError({
                 message: '<%= error.fileName %>' +
                 '\nLine <%= error.lineNumber %>:' +
