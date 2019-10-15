@@ -1,0 +1,116 @@
+@import "preloader";
+.modal {
+  display: none;
+}
+
+
+
+
+.no-js {
+  display: none;
+}
+
+@media screen and (max-width: 670px) {
+  /*.input__forSelect .select2.select2-container{*/
+  /*    border:1px solid #efefef;*/
+  /*    border-top:0;*/
+  /*    border-left: 0;*/
+  /*    border-right: 0;*/
+  /*    border-radius: 0;*/
+  /*    height: 70px;*/
+  /*}*/
+  /*.input__forSelect--double:first-child .select2.select2-container{*/
+  /*    border-right: 1px solid #efefef;*/
+  /*}*/
+  /*.input__forSelect .select2-container--default .select2-selection--single{*/
+  /*    justify-content: center;*/
+  /*    height: 70px;*/
+  /*}*/
+  /*.input__forSelect .select2-container--default .select2-selection--single .select2-selection__arrow b{*/
+  /*    background: none;*/
+  /*}*/
+  /*.select2-container--default .select2-selection--single .select2-selection__rendered{*/
+  /*    font-weight: 600;*/
+  /*    font-size: 16px;*/
+  /*    color:#000;*/
+  /*    font-family: 'Open Sans', sans-serif;*/
+  /*}*/
+
+  .configurator__price-slider {
+    display: none;
+  }
+  .configurator__price-slider + div {
+    display: block;
+  }
+}
+
+.sales__item {
+  min-height: 502px;
+}
+
+/**
+ * Анимация для новостных блоков
+ */
+.animated_news_text {
+  opacity: .2;
+  transition: opacity .5s ease-out;
+}
+
+.news__item:hover .animated_news_text {
+  opacity: 1;
+}
+
+.droped {
+  text-decoration: line-through;
+}
+
+h1, h2 {
+  font-size: 35px;
+}
+
+@media screen and (max-width: 670px) {
+  h1, h2 {
+    font-size: 22px;
+  }
+}
+
+.back_to_top {
+  position: fixed;
+  bottom: 10%;
+  right: 5%;
+  cursor: pointer;
+  z-index: 100;
+
+  .btn-top {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .btn-top__btn {
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.footer__social-link {
+  text-decoration: none;
+}
+
+/**
+    * kill chat 2 desk
+ */
+#chat-24-widget-container {
+  position: fixed;
+  right: -30px !important;
+  left: auto !important;
+  bottom: 10% !important;
+}
+
+#chat-24-inner-container {
+  box-shadow: none !important;
+}
+
+#chat-24-roll-icon {
+  background-image: url(https://web.chat2desk.com/images/widget/roll/icons/R1-6_bw.gif) !important
+}

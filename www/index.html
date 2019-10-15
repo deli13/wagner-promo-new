@@ -8,6 +8,7 @@
 	<link rel="stylesheet" href="css/jquery.fullPage.css">
 	<link rel="stylesheet" href="css/owl.carousel.css">
 	<link rel="stylesheet" href="css/jquery-ui-slider.css">
+	<link rel="stylesheet" href="css/jquery.fancybox.min.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="icon" href="favicon.ico" type="image/x-icon">	
 
@@ -112,7 +113,7 @@
 
 					<div class="container__btns promo-block__btns">
 						<a href="#" class="btn">выбрать автомобиль</a>
-						<a href="#" class="btn promo-block__btn-test-drive">тест-драйв</a>
+						<a href="#" data-src="#modal" data-fancybox class="btn promo-block__btn-test-drive">тест-драйв</a>
 					</div>
 
 				</div>
@@ -254,11 +255,40 @@
 
 	</main>
 
+	<div id="modal" class="modal">
+		<h3 class="form-name">Запись на тест-драйв</h3>
+		<form action="/webforms/send" method="post" class="modal_form_valid">
+			<input type="hidden" name="system_form_id" value="119"/>
+			<input type="hidden" name="system_email_to" value="394"/>
+			<input type="hidden" name="ref_onsuccess" value="/webforms/posted/"/>
+			<div class="form-group">
+				<input type="text" class="contactform__input" required name="data[new][name]" placeholder="Имя" id="name_form"/>
+			</div>
+			<div class="form-group">
+				<input type="tel" class="contactform__input phone-mask" required name="data[new][phone]" placeholder="Телефон" id="phone_form"/>
+			</div>
+			<div class="form-group">
+				<input type="checkbox" class="legacy_form" id="reklama_legacy" name="reklama_legacy" required>
+				<label for="reklama_legacy"><span class="check"></span>Согласие на <a target="_blank" href="http://www.wagner-auto.ru/rules1/">рекламную
+					коммуникацию</a></label>
+			</div>
+			<div class="form-group">
+				<input type="checkbox" class="legacy_form" name="personal_legacy" id="personal_legacy" required>
+				<label for="personal_legacy"><span class="check"></span>Согласие на <a target="_blank" href="http://www.wagner-auto.ru/rules/">обработку
+					персональных данных</a></label>
+			</div>
+
+			<input type="hidden" name="data[new][additional]"/>
+			<input type="submit" class="btn"/>
+		</form>
+	</div>
+
 	<script src="js/jquery-3.4.1.min.js"></script>
 	<script src="js/jquery.fullPage.js"></script>
 	<script src="js/owl.carousel.min.js"></script>
 	<script src="js/jquery-ui-slider.min.js"></script>
 	<script src="js/jquery.mask.min.js"></script>
+	<script src="js/jquery.fancybox.js"></script>
 	<script src="js/jquery.validate.js"></script>
 	<script src="js/script.js"></script>
 	

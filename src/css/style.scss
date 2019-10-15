@@ -1,54 +1,14 @@
-@import 'blocks3/fonts';
-@import 'blocks/global';
-@import 'blocks/header';
-@import 'blocks/nav-menu';
-@import 'blocks/fullpage';
-@import 'blocks/container';
-@import 'blocks/slider-nav';
-@import 'blocks/link-cars';
-@import 'blocks/logo';
-@import 'blocks/top-info';
-@import 'blocks/burger';
-@import 'blocks/wagner-section';
-@import 'blocks/btn-down';
-@import 'blocks/promo-block';
-@import 'blocks/promo-slider';
-@import 'blocks/footer';
-@import 'blocks/menu';
-@import 'blocks4/accordion';
-@import 'blocks2/page-main';
-@import 'blocks2/configurator';
-@import 'blocks2/row';
-@import 'blocks2/input';
-@import 'blocks2/input-select2';
-@import 'blocks2/models';
-@import 'blocks2/page-header';
-@import 'blocks2/catalog-mob-nav';
-@import 'blocks3/page';
-@import 'blocks3/news';
-@import 'blocks3/input__for-input';
-@import 'blocks3/action';
-@import "blocks3/new";
-@import 'blocks3/breadcrumbs';
-@import 'blocks3/car/car-main';
-@import 'blocks3/car/car-promo';
-@import 'blocks3/car/car-gallery';
-@import 'blocks3/car/car-table';
-@import 'blocks3/car/car-all-info';
-@import 'blocks3/aboutus/about-us-page';
-@import 'blocks3/aboutus/about-us-promo';
-@import 'blocks3/aboutus/awards';
-@import 'blocks3/aboutus/sales';
-@import 'blocks3/aboutus/aboutus-career';
-@import 'blocks3/aboutus/aboutus-partners';
-@import 'blocks3/aboutus/contacts';
-@import 'blocks3/aboutus/contactform';
-@import 'blocks3/article';
-@import 'blocks3/article-form';
-@import 'blocks3/article-slider';
-@import 'blocks4/top-menu';
-@import 'blocks3/car/car-main-propertis';
-@import 'blocks3/car/car-equioment';
-@import 'blocks3/car/car-venue';
-@import 'blocks3/car/car-form';
-@import 'blocks4/vacancy';
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400&display=swap&subset=cyrillic');
+@import "mixins";
+@import "blocks/index";
+@import "blocks2/index";
+@import "blocks3/index";
+@import "blocks4/index";
+@import "custom/index";
+@import "forms/index";
+
+
+
+
+
+

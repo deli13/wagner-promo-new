@@ -1,0 +1,39 @@
+$width_height: 22px;
+.form-group {
+  input[type=checkbox] {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+
+  input[type=checkbox] + label > .check {
+    position: relative;
+    display: inline-block;
+    height: $width_height;
+    width: $width_height;
+    border: .1rem solid #000;
+    border-radius: .3rem;
+    background-color: #fff;
+    transition: border-color .2s ease-in-out;
+    text-align: center;
+    margin-right: 10px;
+    margin-bottom: -5px;
+  }
+  input[type=checkbox]:checked + label>.check:before{
+    position: absolute;
+    left:5px;
+    bottom:3px;
+    display: inline-block;
+    content: "";
+    width: 7px;
+    height: 13px;
+    border: solid #000;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+  }
+  input[type=checkbox] + label{
+    cursor: pointer;
+    user-select: none;
+  }
+
+}

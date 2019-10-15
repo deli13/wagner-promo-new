@@ -1,0 +1,33 @@
+.form-group {
+  padding: 15px 0;
+}
+.form-name {
+  @include fonts(300);
+  font-size: 60px;
+  margin-bottom: 60px;
+}
+input:not([type=checkbox]) {
+  display: block;
+  width: 100%;
+  border-bottom: 1px solid #232428;
+  height: 40px;
+  font-size: 14px;
+  transition: border-bottom-color .5s ease-in-out;
+}
+
+input:not([type=checkbox]):focus {
+  border-bottom: 1px solid #c84455;
+}
+
+input[type=submit] {
+  width: auto;
+  margin: 0 auto;
+  cursor: pointer;
+  transition: border-color .5s ease-in;
+  margin-top: 30px;
+}
+
+input[type=submit]:hover {
+  border-color: #c84455;
+  color: #c84455;
+}
