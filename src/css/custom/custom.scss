@@ -2,7 +2,9 @@
 .modal {
   display: none;
 }
-
+a{
+  color: inherit;
+}
 
 
 
@@ -64,12 +66,12 @@
   text-decoration: line-through;
 }
 
-h1, h2 {
+h2 {
   font-size: 35px;
 }
 
 @media screen and (max-width: 670px) {
-  h1, h2 {
+  h2 {
     font-size: 22px;
   }
 }

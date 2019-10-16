@@ -1,0 +1,29 @@
+.article{
+  &__head{
+  text-align: left;
+}
+  &__text{
+    p{
+      @include fonts(100);
+      font-size: 18px;
+      margin-bottom: 40px;
+
+    }
+    strong{
+      font-size: inherit;
+      font-weight: bold;
+    }
+    ul{
+      padding-left: 20px;
+    }
+    li{
+      font-size: 18px;
+      margin:5px;
+    }
+    h4{
+      @include fonts(bold);
+      font-size: 23px;
+      margin:10px 0 20px;
+    }
+  }
+}
