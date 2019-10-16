@@ -5,6 +5,9 @@
   @include fonts(300);
   font-size: 60px;
   margin-bottom: 60px;
+  @include media-breakpoint-down(xs){
+    margin-bottom: 40px;
+  }
 }
 input:not([type=checkbox]) {
   display: block;
@@ -19,10 +22,6 @@ input:not([type=checkbox]) {
 }
 .contactform__textarea{
   border-color: $gray_border;
-}
-label{
-  display: inline-block;
-  margin-bottom: 12px;
 }
 
 input:not([type=checkbox]):focus {

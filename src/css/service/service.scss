@@ -1,6 +1,9 @@
 .service__head{
   @include fonts(300);
-  font-size: 60px;
+  font-size: $desktop_head;
+  @include media-breakpoint-down(xs){
+    font-size: $mobile_head;
+  }
 }
 .service__intro_text{
   p{
@@ -8,6 +11,9 @@
     font-size: 23px;
     text-align: center;
     margin-bottom: 40px;
+    @include media-breakpoint-down(xs){
+      font-weight: 500;
+    }
   }
 }
 .service__row{
@@ -28,6 +34,9 @@
     font-size: 23px;
     margin-top: 22px;
     flex-basis: 30%;
+    @include media-breakpoint-down(xs){
+      font-size: 18px;
+    }
   }
   &_text{
     text-align: center;

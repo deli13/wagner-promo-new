@@ -1,5 +1,44 @@
 .contactform__head{
   margin: 70px 0;
   @include fonts(100);
-  font-size: 60px;
+  font-size: $desktop_head;
+  @include media-breakpoint-down(xs){
+    font-size: $mobile_head;
+  }
 }
+
+@include media-breakpoint-down(xs){
+  .services__form{
+    border: #0d95e8;
+    input::placeholder{
+      text-align: center;
+    }
+    .input__forSelect .select2.select2-container{
+      height: 50px;
+      border-color: $gray_border;
+    }
+    .input__forSelect .select2-container--default .select2-selection--single{
+      height: 50px;
+    }
+    .select2-container--default .select2-selection--single .select2-selection__rendered{
+      @include fonts(100);
+      margin-left: 20px;
+    }
+    .input__forSelect .select2-container--default .select2-selection--single .select2-selection__arrow{
+      display: none;
+    }
+  }
+}
+label{
+
+  &.inline{
+    display: inline-block;
+    margin-bottom: 12px;
+    @include media-breakpoint-down(xs){
+      display: block;
+      text-align: center;
+    }
+  }
+
+}
+
