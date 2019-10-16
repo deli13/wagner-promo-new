@@ -3,7 +3,18 @@
 	border-bottom: 1px solid #aeb8bd;
 	transition: all 0.2s ease;
 	position: relative;
-
+	&__multicolumn{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		.accordion__title{
+			margin: 0 auto;
+		}
+		.accordion__image-container{
+			flex-basis: 10%;
+		}
+	}
 	@media screen and (max-width: 670px) {
 		margin-left: -10px;
 		margin-right: -10px;
@@ -77,7 +88,9 @@
 		margin-bottom: 0;
 		text-align: left;
 		padding-right: 65px;
-
+		&.big{
+			font-size: 33px;
+		}
 		@media screen and (max-width: 670px) {
 			font-size: 19px;
 			text-align: center;

@@ -13,6 +13,16 @@ input:not([type=checkbox]) {
   height: 40px;
   font-size: 14px;
   transition: border-bottom-color .5s ease-in-out;
+  &.input__gray{
+    border-color: $gray_border;
+  }
+}
+.contactform__textarea{
+  border-color: $gray_border;
+}
+label{
+  display: inline-block;
+  margin-bottom: 12px;
 }
 
 input:not([type=checkbox]):focus {

@@ -13,10 +13,10 @@
   }
   input[type="radio"] + label {
     cursor: pointer;
-    display: flex;   
+    display: flex;
     height: 47px;
     align-items: center;
-  }  
+  }
   input[type="radio"]:checked + label {
     background-color: #efefef;
   }
@@ -65,5 +65,5 @@
   }
 }
 select::-ms-expand {
-    display: none;
+  display: none;
 }

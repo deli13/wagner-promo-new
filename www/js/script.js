@@ -378,6 +378,7 @@ $(document).ready(function() {
   };
   $(".accordion__icon--mob").on("click", AccordionClose);
 
-   
 
+  /** новые стили **/
+  // $("select").select2();
 });
