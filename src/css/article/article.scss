@@ -1,29 +1,42 @@
-.article{
-  &__head{
-  text-align: left;
-}
-  &__text{
-    p{
+.article {
+  &__head {
+    text-align: left;
+  }
+
+  &__text {
+
+    &.article__discont {
+      p {
+        @include fonts(500);
+        font-size: 23px;
+      }
+    }
+
+    p {
       @include fonts(100);
       font-size: 18px;
       margin-bottom: 40px;
-
+      color: #1b1c20;
     }
-    strong{
+
+    strong {
       font-size: inherit;
       font-weight: bold;
     }
-    ul{
+
+    ul {
       padding-left: 20px;
     }
-    li{
+
+    li {
       font-size: 18px;
-      margin:5px;
+      margin: 5px;
     }
-    h4{
+
+    h4 {
       @include fonts(bold);
       font-size: 23px;
-      margin:10px 0 20px;
+      margin: 35px 0 20px;
     }
   }
 }
