@@ -6,6 +6,9 @@
     font-size: $mobile_head;
   }
 }
+.input__forSelect.base__form .select2-container{
+  padding-left: 0;
+}
 
 @include media-breakpoint-down(xs){
   .services__form{

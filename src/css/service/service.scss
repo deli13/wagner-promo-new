@@ -23,10 +23,19 @@
     flex-direction: column;
     justify-content: center;
     padding: 30px;
+    transition: opacity ease-in-out .5s;
+    cursor: pointer;
+    &:hover{
+      opacity: .5;
+    }
   }
   &_images{
     align-self: center;
     flex-basis: 40%;
+    &[src$="svg"]{
+      width: 125px;
+      max-height: 125px;
+    }
   }
   &_head{
     text-align: center;
