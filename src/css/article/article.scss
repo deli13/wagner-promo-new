@@ -3,8 +3,18 @@
     text-align: left;
   }
 
-  &__text {
+  &__subhead{
+    @include fonts(500);
+    font-size: 33px;
+    text-align: left;
+  }
 
+  &__text {
+    &_image_container{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
     &.article__discont {
       p {
         @include fonts(500);
@@ -38,5 +48,13 @@
       font-size: 23px;
       margin: 35px 0 20px;
     }
+  }
+}
+.article__rules{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  @include media-breakpoint-down(xs){
+    justify-content: center;
   }
 }

@@ -3,6 +3,25 @@
 	border-bottom: 1px solid #aeb8bd;
 	transition: all 0.2s ease;
 	position: relative;
+
+	&__btn{
+		max-width: 10%;
+		margin: 0 auto 25px;
+	}
+	&__price{
+		@include fonts(500);
+		font-size: 33px;
+		@include media-breakpoint-down(xs){
+			font-size: 20px;
+		}
+
+	}
+	&__cache_image{
+		max-height: 46px;
+		@include media-breakpoint-down(xs){
+			max-height: 26px;
+		}
+	}
 	&__multicolumn{
 		display: flex;
 		flex-direction: row;
@@ -34,6 +53,17 @@
 		padding-bottom: 27px;
 		position: relative;
 		cursor: pointer;
+		&.with_price{
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			.accordion__title{
+				flex-basis: 70%;
+			}
+			@include media-breakpoint-down(xs){
+				flex-direction: column;
+			}
+		}
 	}
 	&__icon {
 		position: absolute;

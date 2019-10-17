@@ -18,6 +18,12 @@
 }
 .service__row{
   padding: 70px 0;
+  &.small{
+    padding:10px;
+    .service__row_head{
+      font-size: 15px;
+    }
+  }
   &_item{
     display: flex;
     flex-direction: column;

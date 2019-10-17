@@ -75,7 +75,11 @@ h2 {
     font-size: 22px;
   }
 }
-
+@include media-breakpoint-down(xs){
+  .mob__center{
+    text-align: center;
+  }
+}
 .back_to_top {
   position: fixed;
   bottom: 10%;
@@ -98,7 +102,26 @@ h2 {
 .footer__social-link {
   text-decoration: none;
 }
-
+.link_pdf{
+  @include fonts(500);
+  font-size: 18px;
+  &::before{
+    content: url("../images/pdf.svg");
+    margin-right: 5px;
+    display: block;
+    float: left;
+    margin-top: -5px;
+    @include media-breakpoint-down(xs){
+      float: none;
+    }
+  }
+  @include media-breakpoint-down(xs){
+    font-size: 15px;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+  }
+}
 /**
     * kill chat 2 desk
  */
