@@ -1,7 +1,9 @@
 //Yandex Map
 var myMap;
 // Дождёмся загрузки API и готовности DOM.
-ymaps.ready(init);
+if(document.querySelector("#map")){
+    ymaps.ready(init);
+}
 function init () {
     // Создание экземпляра карты и его привязка к контейнеру с
     // заданным id ("map").
@@ -72,3 +74,36 @@ function init () {
     myMap.geoObjects.add(myPlacemark4);
     myMap.behaviors.disable('scrollZoom'); //запрет прокрутки по скроллу
 };
+
+if(document.querySelector("#gut_map")){
+    ymaps.ready(init_gut);
+}
+
+function init_gut() {
+    let myMap = new ymaps.Map('gut_map', {
+        // При инициализации карты обязательно нужно указать
+        // её центр и коэффициент масштабирования.
+        center: [59.969416, 30.302587], //
+        zoom: 11,
+        // Отключаем все элементы управления
+        controls: ['zoomControl']
+    });
+    place = new ymaps.Placemark([59.994234, 30.437967], {
+        //balloonContent: 'Центр Таллинский'
+        balloonContentHeader: '<strong>GUT сервис</strong>',
+        balloonContentBody: 'Санкт-Петербург, Пискаревский пр-т, 63',
+    }, {
+        // Опции.
+        // Необходимо указать данный тип макета.
+        iconLayout: 'default#image',
+        // Своё изображение иконки метки.
+        iconImageHref: 'images/icon-map-black.svg',
+        // Размеры метки.
+        iconImageSize: [30, 41],
+        // Смещение левого верхнего угла иконки относительно
+        // её "ножки" (точки привязки).
+        // iconImageOffset: [-21, -60]
+    });
+    myMap.geoObjects.add(place);
+    myMap.behaviors.disable('scrollZoom'); //запрет прокрутки по скроллу
+}

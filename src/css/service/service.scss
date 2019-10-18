@@ -4,6 +4,9 @@
   @include media-breakpoint-down(xs){
     font-size: $mobile_head;
   }
+  &.head_left{
+    text-align: left;
+  }
 }
 .service__intro_text{
   p{
@@ -60,4 +63,46 @@
     color: #1b1c20;
     flex-basis: 30%;
   }
+}
+.accordion__line{
+  display: flex;
+  flex-direction: row;
+  @include media-breakpoint-down(xs){
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  &_image{
+    max-width: 30px;
+    height: 30px;
+    margin-right: 40px;
+    @include media-breakpoint-down(xs){
+      margin-right: 0px;
+    }
+  }
+}
+.margin_head{
+  margin: 60px 0 40px;
+}
+.contact__info{
+  background-color: #f0f0f0;
+  padding: 50px 90px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height:100%;
+  @include media-breakpoint-down(xs){
+    padding: 25px 35px
+  }
+  p{
+    @include fonts(100);
+    font-size: 14px;
+    @include media-breakpoint-down(xs){
+      text-align: center;
+    }
+  }
+}
+.contactform.article-form__inner{
+  margin-top: 60px;
+  padding-top: 0;
 }

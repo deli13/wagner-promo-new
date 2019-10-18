@@ -388,7 +388,7 @@ if($.fn.fullpage){
     /** новые стили **/
     // $("select").select2();
 
-    // Array.from(document.querySelectorAll(".service__grid img[src$='svg']")).forEach(function (item) {
+    // Array.from(document.querySelectorAll("img[src$='svg'].accordion__line_image")).forEach(function (item) {
     //     var $class=item.getAttribute("class");
     //     var $src=item.getAttribute("src");
     //     fetch($src)

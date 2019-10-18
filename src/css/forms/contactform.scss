@@ -4,12 +4,21 @@
   font-size: $desktop_head;
   @include media-breakpoint-down(xs){
     font-size: $mobile_head;
+    margin: 30px 0;
   }
 }
 .input__forSelect.base__form .select2-container{
   padding-left: 0;
 }
 
+.article-form__inner{
+  input,textarea{
+    background: #f7f7f7;
+  }
+}
+.form__inner{
+  padding-top: 10px;
+}
 @include media-breakpoint-down(xs){
   .services__form{
     border: #0d95e8;
