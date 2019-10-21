@@ -38,7 +38,7 @@
       opacity: .5;
     }
     @include ie_media_only(){
-      min-height: 350px;
+      min-height: 200px;
     }
   }
   &_images{
