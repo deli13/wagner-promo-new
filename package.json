@@ -18,8 +18,22 @@
   },
   "homepage": "https://github.com/kaddem/student-startpack#readme",
   "dependencies": {
-    "bootstrap": "^4.3.1"
+    "autoprefixer": "^9.6.5",
+    "bootstrap": "^4.3.1",
+    "gulp-autoprefixer": "^7.0.1"
   },
+  "browserslist": [
+    "> 1%",
+    "ie >= 10",
+    "edge >= 15",
+    "ff >= 45",
+    "chrome >= 45",
+    "safari >= 7",
+    "opera >= 23",
+    "ios >= 7",
+    "android >= 4",
+    "bb >= 10"
+  ],
   "devDependencies": {
     "browser-sync": "^2.23.6",
     "css-mqpacker": "^6.0.2",
