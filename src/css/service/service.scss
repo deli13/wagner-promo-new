@@ -37,6 +37,9 @@
     &:hover{
       opacity: .5;
     }
+    @include ie_media_only(){
+      min-height: 350px;
+    }
   }
   &_images{
     align-self: center;
@@ -44,6 +47,9 @@
     &[src$="svg"]{
       width: 125px;
       max-height: 125px;
+    }
+    @include ie_media_only(){
+      max-width: 150px;
     }
   }
   &_head{

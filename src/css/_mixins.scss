@@ -2,3 +2,11 @@
   font-family: 'Open Sans', sans-serif;
   font-weight: $weight;
 }
+/**
+ * Миксин для IE стилей
+ */
+@mixin ie_media_only(){
+  @media (-ms-high-contrast:none),screen and (-ms-high-contrast:active){
+    @content
+  }
+}
