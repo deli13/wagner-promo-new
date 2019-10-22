@@ -54,7 +54,7 @@
 		}
 
 		&--volume {
-			background: url(../images/propertes-01.svg) no-repeat center 24px;
+			background: url(#{$image_path}/propertes-01.svg) no-repeat center 24px;
 			background-size: 45px 45px;
 
 			@media screen and (max-width: 670px) {
@@ -63,7 +63,7 @@
 			}
 		}
 		&--power {
-			background: url(../images/propertes-02.svg) no-repeat center 18px;
+			background: url(#{$image_path}/propertes-02.svg) no-repeat center 18px;
 			background-size: 61px 45px;
 
 			@media screen and (max-width: 670px) {
@@ -72,7 +72,7 @@
 			}
 		}
 		&--fuel {			
-			background: url(../images/propertes-03.svg) no-repeat center 20px;
+			background: url(#{$image_path}/propertes-03.svg) no-repeat center 20px;
 			background-size: 38px 45px;
 
 			@media screen and (max-width: 670px) {
@@ -81,7 +81,7 @@
 			}
 		}
 		&--transmission {			
-			background: url(../images/propertes-04.svg) no-repeat center 21px;
+			background: url(#{$image_path}/propertes-04.svg) no-repeat center 21px;
 			background-size: 45px 45px;
 
 			@media screen and (max-width: 670px) {
@@ -90,7 +90,7 @@
 			}
 		}
 		&--unit {			
-			background: url(../images/propertes-05.svg) no-repeat center 20px;
+			background: url(#{$image_path}/propertes-05.svg) no-repeat center 20px;
 			background-size: 37px 45px;
 
 			@media screen and (max-width: 670px) {
@@ -99,7 +99,7 @@
 			}
 		}
 		&--carcass {			
-			background: url(../images/propertes-06.svg) no-repeat center 38px;
+			background: url(#{$image_path}/propertes-06.svg) no-repeat center 38px;
 			background-size: 68px 27px;
 
 			@media screen and (max-width: 670px) {

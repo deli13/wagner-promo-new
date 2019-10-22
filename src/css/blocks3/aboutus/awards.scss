@@ -35,7 +35,7 @@
 }
 .awards-slider.owl-carousel button.owl-dot.active {
 	border-color: #1b1c20;
-    background: url(../images/NavBtnCntr-active.svg) no-repeat center;
+    background: url(#{$image_path}/NavBtnCntr-active.svg) no-repeat center;
     background-size: 6px 6px;
 }
 @media screen and (max-width: 670px) {
@@ -53,12 +53,12 @@
   }
   .awards-slider.owl-carousel .owl-nav button.owl-prev {
     margin-right: 20px;
-    background: url(../images/slider-arrow-prev.svg) no-repeat;
+    background: url(#{$image_path}/slider-arrow-prev.svg) no-repeat;
     background-size: contain;
   }
   .awards-slider.owl-carousel .owl-nav button.owl-next {
     margin-left: 20px;
-    background: url(../images/slider-arrow-next.svg) no-repeat;
+    background: url(#{$image_path}/slider-arrow-next.svg) no-repeat;
     background-size: contain;
   }
 }

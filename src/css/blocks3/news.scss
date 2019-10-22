@@ -24,7 +24,7 @@
         display: none;
         border-top: 1px solid #cdd1d4;
         border-bottom: 1px solid #cdd1d4;
-        background: url(../images/gray-bg.jpg) no-repeat;
+        background: url(#{$image_path}/gray-bg.jpg) no-repeat;
         background-size: cover;
 
         &--open {
@@ -79,7 +79,7 @@
     text-decoration: none;
     padding-right: 25px;
     display: block;
-    background: url(../images/arrow-right.svg) no-repeat right 2px;
+    background: url(#{$image_path}/arrow-right.svg) no-repeat right 2px;
       background-size: 11px 16px;
     text-transform: uppercase;
     font-weight: 400;
@@ -103,7 +103,7 @@
       .news__more-info {
         font-weight: 600;
         color: #000000;
-        background-image: url(../images/arrow-right-black.svg);
+        background-image: url(#{$image_path}/arrow-right-black.svg);
       }
     }
   }
@@ -230,13 +230,13 @@
       height: 21px;
       right: 20px;
       top: 30px;
-      background: url(../images/filter-icon.svg) no-repeat;
+      background: url(#{$image_path}/filter-icon.svg) no-repeat;
       background-size: contain;
       cursor: pointer;
       z-index: 57;
 
       &--open {
-          background-image: url(../images/reset-filter-icon.svg);
+          background-image: url(#{$image_path}/reset-filter-icon.svg);
       }
     }
   }
@@ -250,13 +250,13 @@
       display: block;
       width: 21px;
       height: 21px;
-      background: url(../images/search-icon.svg) no-repeat;
+      background: url(#{$image_path}/search-icon.svg) no-repeat;
       background-size: contain;
       cursor: pointer;
       z-index: 55;
 
       &--open {
-          background-image: url(../images/reset-filter-icon.svg);
+          background-image: url(#{$image_path}/reset-filter-icon.svg);
       }
     }
   }

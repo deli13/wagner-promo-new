@@ -6,7 +6,7 @@
 	}
 
 	&__gray-bg {
-		background: url(../images/gray-bg.jpg) no-repeat;
+		background: url(#{$image_path}/gray-bg.jpg) no-repeat;
 		background-size: cover;
 		border-top: 1px solid #cdd1d4;
 		border-bottom: 1px solid #cdd1d4;

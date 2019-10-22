@@ -11,15 +11,15 @@
     display: block;
     width: 31px;
     height: 17px;
-    background: url(../images/Arrow.png);
+    background: url(#{$image_path}/Arrow.png);
 
     &--accessories {
       @media screen and (min-width: 671px) and (max-width: 960px) {
-        background: url(../images/Arrow-white.png);
+        background: url(#{$image_path}/Arrow-white.png);
         background-size: contain;
       }
       @media screen and (max-width: 576px) {
-        background: url(../images/Arrow-white.png);
+        background: url(#{$image_path}/Arrow-white.png);
         background-size: contain;
       }
     }
@@ -48,7 +48,7 @@
     display: block;
     width: 31px;
     height: 17px;
-    background: url(../images/Arrow-top.png);
+    background: url(#{$image_path}/Arrow-top.png);
   }
   @media screen and (max-width: 670px) {
     display: none;

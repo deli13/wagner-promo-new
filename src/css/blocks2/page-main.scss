@@ -1,12 +1,12 @@
 .page-main {
   padding-top: 115px;
-  background: url(../images/page-background.jpg) no-repeat center top,
+  background: url(#{$image_path}/page-background.jpg) no-repeat center top,
     #ffffff;
   background-size: contain;
 
   @media screen and (max-width: 670px) {
   	padding-top: 40px;
-  	background: url(../images/page-background-mob.jpg) no-repeat center top, #ffffff;
+  	background: url(#{$image_path}/page-background-mob.jpg) no-repeat center top, #ffffff;
   	background-size: contain;
   }
 

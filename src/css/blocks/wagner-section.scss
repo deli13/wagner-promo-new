@@ -1,5 +1,5 @@
 .wagner-section {
-  background: url(../images/background-section.jpg) no-repeat center;
+  background: url(#{$image_path}/background-section.jpg) no-repeat center;
   background-size: cover;
   overflow: hidden;
 
@@ -7,69 +7,69 @@
 
   }
   &--usedcars {
-    background: url(../images/usedcars-bg.png) no-repeat right bottom,
-       url(../images/background-section.jpg) no-repeat center;
+    background: url(#{$image_path}/usedcars-bg.png) no-repeat right bottom,
+       url(#{$image_path}/background-section.jpg) no-repeat center;
        background-size: contain, cover;
 
        @media screen and (min-width: 671px) and (max-width: 960px) {
-        background: url(../images/usedcars-bg-mob.png) no-repeat right 85%,
-          url(../images/background-section.jpg) no-repeat center;
+        background: url(#{$image_path}/usedcars-bg-mob.png) no-repeat right 85%,
+          url(#{$image_path}/background-section.jpg) no-repeat center;
           background-size: contain, cover;
        }
 
        @media screen and (max-width: 576px) {
-        background: url(../images/usedcars-bg-mob.png) no-repeat right center,
-          url(../images/background-section.jpg) no-repeat center;
+        background: url(#{$image_path}/usedcars-bg-mob.png) no-repeat right center,
+          url(#{$image_path}/background-section.jpg) no-repeat center;
           background-size: contain, cover;
        }
   }
   &--service {
-    background: url(../images/service-bg.png) no-repeat right 80px,
-       url(../images/background-section.jpg) no-repeat center;
+    background: url(#{$image_path}/service-bg.png) no-repeat right 80px,
+       url(#{$image_path}/background-section.jpg) no-repeat center;
        background-size: contain, cover;
 
        @media screen and (min-width: 671px) and (max-width: 960px) {
-        background: url(../images/service-bg-mob.png) no-repeat right bottom,
-          url(../images/background-section.jpg) no-repeat center;
+        background: url(#{$image_path}/service-bg-mob.png) no-repeat right bottom,
+          url(#{$image_path}/background-section.jpg) no-repeat center;
           background-size: contain, cover;
        }
 
       @media screen and (max-width: 576px) {
-        background: url(../images/service-bg-mob.png) no-repeat right center,
-          url(../images/background-section.jpg) no-repeat center;
+        background: url(#{$image_path}/service-bg-mob.png) no-repeat right center,
+          url(#{$image_path}/background-section.jpg) no-repeat center;
           background-size: contain, cover;
        }
 
   }
   &--accessories {
-    background: url(../images/accessories-bg-left.png) no-repeat left top,
-        url(../images/accessories-bg-right2.png) no-repeat right bottom,
-       url(../images/background-section.jpg) no-repeat center;
+    background: url(#{$image_path}/accessories-bg-left.png) no-repeat left top,
+        url(#{$image_path}/accessories-bg-right2.png) no-repeat right bottom,
+       url(#{$image_path}/background-section.jpg) no-repeat center;
        background-size: contain, 37%, cover;
 
        @media screen and (min-width: 671px) and (max-width: 960px) {
-        background: url(../images/accessories-bg-mob.png) no-repeat center bottom,
-          url(../images/background-section.jpg) no-repeat center;
+        background: url(#{$image_path}/accessories-bg-mob.png) no-repeat center bottom,
+          url(#{$image_path}/background-section.jpg) no-repeat center;
           background-size: contain, cover;
        }
 
       @media screen and (max-width: 576px) {
-        background: url(../images/accessories-bg-mob.png) no-repeat center bottom,
-          url(../images/background-section.jpg) no-repeat center;
+        background: url(#{$image_path}/accessories-bg-mob.png) no-repeat center bottom,
+          url(#{$image_path}/background-section.jpg) no-repeat center;
           background-size: contain, cover;
        }
   }
   &--finans {
-    background: url(../images/bg-Finans.jpg) no-repeat center -100px;
+    background: url(#{$image_path}/bg-Finans.jpg) no-repeat center -100px;
     background-size: cover;
 
     @media screen and (min-width: 671px) and (max-width: 960px) {
-      background: url(../images/bg-Finans-mob.jpg) no-repeat center top;
+      background: url(#{$image_path}/bg-Finans-mob.jpg) no-repeat center top;
     background-size: cover;
     }
 
     @media screen and (max-width: 576px) {
-      background: url(../images/bg-Finans-mob.jpg) no-repeat center top;
+      background: url(#{$image_path}/bg-Finans-mob.jpg) no-repeat center top;
     background-size: cover;
     }
   }

@@ -2,7 +2,7 @@
   display: block;
   width: 31px;
   height: 21px;
-  background: url(../images/burger.png) no-repeat;
+  background: url(#{$image_path}/burger.png) no-repeat;
   background-size: contain;
   cursor: pointer;
   z-index: 916;
@@ -11,7 +11,7 @@
   &--open {
     width: 31px;
     height: 23px;
-    background-image: url(../images/close-burger.svg); 
+    background-image: url(#{$image_path}/close-burger.svg);
     background-size: 24px 23px;
     background-position: top right;    
 
@@ -31,7 +31,7 @@
 .burger-close {
   width: 31px;
   height: 23px;
-  background-image: url(../images/close-burger.svg); 
+  background-image: url(#{$image_path}/close-burger.svg);
   background-size: 24px 23px;
   background-position: top right;    
   background-repeat: no-repeat;

@@ -98,13 +98,13 @@
 
     &--download {
       &:before {
-        background-image: url(../images/download-icon.svg);
+        background-image: url(#{$image_path}/download-icon.svg);
         width: 23px;
         height: 20px;
         top: 0px;
 
         @media screen and (max-width: 576px) {
-          background-image: url(../images/download-icon-gray.svg);
+          background-image: url(#{$image_path}/download-icon-gray.svg);
           width: 20px;
           height: 18px;
         }
@@ -112,13 +112,13 @@
     }
     &--send {
       &:before {
-        background-image: url(../images/send-icon.svg);
+        background-image: url(#{$image_path}/send-icon.svg);
         width: 22px;
         height: 17px;
         top: 4px;
 
         @media screen and (max-width: 576px) {
-          background-image: url(../images/send-icon-gray.svg);
+          background-image: url(#{$image_path}/send-icon-gray.svg);
           width: 20px;
           height: 15px;
           top: 5px;

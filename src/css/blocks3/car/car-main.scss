@@ -181,7 +181,7 @@
     }
 
      &--like {
-      // background-image: url(../images/like-icon.svg);
+      // background-image: url(#{$image_path}/like-icon.svg);
       // background-size: 25px 25px;
       svg {
         width: 45px;
@@ -203,7 +203,7 @@
       }
     }
     &--compare {
-      //background-image: url(../images/compare-icon.svg);
+      //background-image: url(#{$image_path}/compare-icon.svg);
       //background-size: 45px 45px;
       svg {
         width: 45px;
@@ -246,7 +246,7 @@
   	}
   	&:before  {
   		content: '';
-  		background: url('../images/tahometr-icon.svg');
+  		background: url('#{$image_path}/tahometr-icon.svg');
   		width: 48px;
   		height: 40px;
   		display: block;

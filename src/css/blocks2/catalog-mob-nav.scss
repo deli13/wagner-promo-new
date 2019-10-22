@@ -31,14 +31,14 @@
 	&__return {
 		width: 21px;
 		height: 19px;
-		background: url(../images/return-icon.svg) no-repeat;
+		background: url(#{$image_path}/return-icon.svg) no-repeat;
 		background-size: contain;
 		display: block;
 	}
 	&__sorting {
 		width: 30px;
 		height: 21px;
-		background: url(../images/sorting-icon.svg) no-repeat;
+		background: url("#{$image_path}/sorting-icon.svg") no-repeat;
 		background-size: contain;
 		display: block;
 	}

@@ -1,8 +1,8 @@
 .about-us-promo {
 	height: 100vh;
-	background: url(../images/about-us-promo-bg-right.png) no-repeat right bottom,
-		url(../images/about-us-promo-bg-left.png) no-repeat left 70%,
-		url(../images/about-us-promo.jpg) no-repeat top center;
+	background: url(#{$image_path}/about-us-promo-bg-right.png) no-repeat right bottom,
+		url(#{$image_path}/about-us-promo-bg-left.png) no-repeat left 70%,
+		url(#{$image_path}/about-us-promo.jpg) no-repeat top center;
 	background-size: auto, auto, contain;
 
 	@media screen and (max-width: 1680px) {
@@ -12,7 +12,7 @@
 
 	@media screen and (max-width: 960px) {
 		height: auto;
-		background: url(../images/about-us-promo-mob.jpg) no-repeat top center;
+		background: url(#{$image_path}/about-us-promo-mob.jpg) no-repeat top center;
 		background-size: contain;
 	}
 

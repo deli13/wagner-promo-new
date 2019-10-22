@@ -12,7 +12,7 @@
     padding-right: 15px;
     height: 30px;
     width: 40px;
-    background: url(../images/specialoffer-bg.svg) no-repeat;
+    background: url(#{$image_path}/specialoffer-bg.svg) no-repeat;
     z-index: 50;
     display: flex;
     align-content: center;
@@ -33,7 +33,7 @@
       }
     }
       &:hover {
-        background: url(../images/specialoffer-bg-hover.svg) no-repeat;
+        background: url(#{$image_path}/specialoffer-bg-hover.svg) no-repeat;
         width: 150px;
 
         span {
@@ -81,7 +81,7 @@
         }
 
         .models__action {
-          background: url(../images/specialoffer-bg-hover.svg) no-repeat;
+          background: url(#{$image_path}/specialoffer-bg-hover.svg) no-repeat;
           width: 150px;
 
           span {
@@ -271,7 +271,7 @@
       left: 0;
       width: 20px;
       height: 23px;
-      background: url(../images/availability-icon.svg) no-repeat;
+      background: url(#{$image_path}/availability-icon.svg) no-repeat;
       background-size: contain;
 
       @media screen and (max-width: 670px) {
@@ -360,7 +360,7 @@
         top: 5px;
         width: 40px;
         height: 20px;
-        background: url(../images/carcass-icon.svg) no-repeat;
+        background: url(#{$image_path}/carcass-icon.svg) no-repeat;
 
         @media screen and (max-width: 670px) {
           width: 30px;
@@ -381,7 +381,7 @@
         top: 2px;
         width: 21px;
         height: 21px;
-        background: url(../images/transmission-icon.svg) no-repeat;
+        background: url(#{$image_path}/transmission-icon.svg) no-repeat;
 
         @media screen and (max-width: 670px) {
           width: 16px;
@@ -400,7 +400,7 @@
         top: 2px;
         width: 25px;
         height: 20px;
-        background: url(../images/drive-unit-icon2.svg) no-repeat;
+        background: url(#{$image_path}/drive-unit-icon2.svg) no-repeat;
 
         @media screen and (max-width: 670px) {
           width: 19px;
@@ -454,7 +454,7 @@
     }
 
      &--like {
-      // background-image: url(../images/like-icon.svg);
+      // background-image: url(#{$image_path}/like-icon.svg);
       // background-size: 25px 25px;
       svg {
         width: 25px;
@@ -476,7 +476,7 @@
       }
     }
     &--compare {
-      //background-image: url(../images/compare-icon.svg);
+      //background-image: url(#{$image_path}/compare-icon.svg);
       //background-size: 25px 25px;
       svg {
         width: 25px;

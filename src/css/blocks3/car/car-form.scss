@@ -155,7 +155,7 @@
     margin: auto;
     content: '';
     pointer-events: none;
-    background-image: url(../images/accordion-icon.svg);
+    background-image: url(#{$image_path}/accordion-icon.svg);
     background-position: right center;
     background-repeat: no-repeat;
     transition: transform .5s ease-in-out;
@@ -208,7 +208,7 @@
 }
 .select2-container--car-select-list .select2-results__option[aria-selected=true]{
     color: #0078be;
-    background: url(../images/car-select.svg) no-repeat 20px center;
+    background: url(#{$image_path}/car-select.svg) no-repeat 20px center;
     background-size: 35px 35px;
 
     @media screen and (max-width: 670px) {

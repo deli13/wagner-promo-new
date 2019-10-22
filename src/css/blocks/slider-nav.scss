@@ -59,13 +59,13 @@
 
    &:after {
     border-color: #1b1c20;
-    background: url(../images/NavBtnCntr-active.svg) no-repeat center;
+    background: url(#{$image_path}/NavBtnCntr-active.svg) no-repeat center;
     background-size: 6px 6px;
   }
 }
 .slider-nav__item a:hover {
   &:after {
-    background: url(../images/NavBtnCntr.svg) no-repeat center;
+    background: url(#{$image_path}/NavBtnCntr.svg) no-repeat center;
     background-size: 6px 6px;
   }
 }

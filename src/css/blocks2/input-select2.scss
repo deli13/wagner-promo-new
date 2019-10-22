@@ -39,7 +39,7 @@
     margin: auto;
     content: '';
     pointer-events: none;
-    background-image: url(../images/arrowDown.svg);
+    background-image: url(#{$image_path}/arrowDown.svg);
     background-position: right center;
     background-repeat: no-repeat;
     transition: transform .5s ease-in-out;

@@ -106,7 +106,7 @@ h2 {
   @include fonts(500);
   font-size: 18px;
   &::before{
-    content: url("../images/pdf.svg");
+    content: url("#{$image_path}/pdf.svg");
     margin-right: 5px;
     display: block;
     float: left;

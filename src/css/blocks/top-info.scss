@@ -61,7 +61,7 @@
       }
     }
     &--ios:before {
-      background: url(../images/IosLogo.png) no-repeat left center;
+      background: url(#{$image_path}/IosLogo.png) no-repeat left center;
       height: 21px;
       width: 21px;
     }
@@ -71,12 +71,12 @@
       }
     }
     &--android:before {
-      background: url(../images/AndroidLogo.png) no-repeat left center;
+      background: url(#{$image_path}/AndroidLogo.png) no-repeat left center;
       width: 20px;
       height: 20px;
     }
     &--lk:before {
-      background: url(../images/lk-icon.png) no-repeat 3px center;
+      background: url(#{$image_path}/lk-icon.png) no-repeat 3px center;
       width: 19px;
       height: 21px;
     }
