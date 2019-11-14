@@ -1,0 +1,51 @@
+.top-menu {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  right: 0;
+  background-color: rgba(255,255,255,1);
+  opacity: 1;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+
+  &__list {
+    list-style: none;
+  }
+  &__link {
+    display: block;
+    text-decoration: none;
+    color: #000000;
+    font-weight: 600;
+    font-size: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #1b1c20;
+    text-transform: uppercase;
+    transition:  all 0.8s;
+
+    @media screen and (max-width: 670px) {
+      font-size: 14.5px;
+      padding-top: 15px;
+      padding-bottom: 15px;
+    }
+
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+  &.open{
+    width: 350px;
+    @include media-breakpoint-down(xs){
+      width: 90%;
+    }
+    padding-left: 35px;
+  }
+}
+.top-info__burger{
+  &.none{
+    display: none;
+  }
+}

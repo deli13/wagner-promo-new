@@ -243,15 +243,15 @@ if($.fn.fullpage){
         });
     }
     ;
-
-    //burger
-    function MobBurger(e) {
-        e.preventDefault();
-        $('#burger').toggleClass('burger--open');
-        $('#top-menu').slideToggle(300);
-    };
-    $("#burger").on("click", MobBurger);
-    $("#burger-close").on("click", MobBurger);
+    //
+    // //burger
+    // function MobBurger(e) {
+    //     e.preventDefault();
+    //     $('#burger').toggleClass('burger--open');
+    //     $('#top-menu').slideToggle(300);
+    // };
+    // $("#burger").on("click", MobBurger);
+    // $("#burger-close").on("click", MobBurger);
 
     /*Маска для телефона*/
     $(function () {
@@ -436,3 +436,13 @@ if($.fn.fullpage){
     //     }, "xml");
     // })
 });
+
+$(".top-info__burger").on("click",function () {
+    $(".top-menu").addClass("open");
+    $(this).addClass("none")
+});
+
+$(".burger-close").on('click',function () {
+    $(".top-menu").removeClass("open");
+    $(".top-info__burger").removeClass("none");
+})
